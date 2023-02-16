@@ -51,7 +51,7 @@ export default function Header() {
                             <img src="../images/logo.png" alt="" />
                         </div>
                         <div className="bar">
-                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-bars-staggered"></i>
                         </div>
                     </div>
                     <div className="averege-item">
