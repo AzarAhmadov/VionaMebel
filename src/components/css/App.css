@@ -546,60 +546,60 @@ body {
   color: #AF1111;
 }
 
-#popular {
+.popular {
   padding-top: 60px;
 }
-#popular .mySwiper2 {
+.popular .mySwiper2 {
   margin-top: 20px;
   display: flex;
   padding-bottom: 60px;
 }
-#popular .mySwiper2.myswip {
+.popular .mySwiper2.myswip {
   padding-bottom: 50px;
 }
-#popular .mySwiper2 .swiper-button-prev::after,
-#popular .mySwiper2 .swiper-rtl .swiper-button-next {
+.popular .mySwiper2 .swiper-button-prev::after,
+.popular .mySwiper2 .swiper-rtl .swiper-button-next {
   font-size: 25px;
   color: #5AA058;
 }
-#popular .mySwiper2 .swiper-button-next::after,
-#popular .mySwiper2 .swiper-rtl .swiper-button-prev {
+.popular .mySwiper2 .swiper-button-next::after,
+.popular .mySwiper2 .swiper-rtl .swiper-button-prev {
   font-size: 25px;
   color: #5AA058;
 }
-#popular .mySwiper2 .swiper-button-next,
-#popular .mySwiper2 .swiper-button-prev {
+.popular .mySwiper2 .swiper-button-next,
+.popular .mySwiper2 .swiper-button-prev {
   top: 222px;
 }
-#popular .mySwiper2 .swiper-horizontal > .swiper-pagination-bullets,
-#popular .mySwiper2 .swiper-pagination-bullets.swiper-pagination-horizontal,
-#popular .mySwiper2 .swiper-pagination-custom,
-#popular .mySwiper2 .swiper-pagination-fraction {
+.popular .mySwiper2 .swiper-horizontal > .swiper-pagination-bullets,
+.popular .mySwiper2 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.popular .mySwiper2 .swiper-pagination-custom,
+.popular .mySwiper2 .swiper-pagination-fraction {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 20px;
 }
-#popular .mySwiper2 .swiper-pagination-bullet-active {
+.popular .mySwiper2 .swiper-pagination-bullet-active {
   width: 15px !important;
   height: 15px !important;
   background: #00477F !important;
 }
-#popular .mySwiper2 .swiper-pagination-bullet {
+.popular .mySwiper2 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background: #D9D9D9;
 }
-#popular .mySwiper2 .swiper-slider {
+.popular .mySwiper2 .swiper-slider {
   height: 500px;
   margin-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
 }
-#popular .mySwiper2 .swiper-slider .slide-content {
+.popular .mySwiper2 .swiper-slider .slide-content {
   padding-left: 25px;
 }
-#popular .mySwiper2 .swiper-slider .slide-item {
+.popular .mySwiper2 .swiper-slider .slide-item {
   padding-top: 65px;
   padding-bottom: 18px;
   display: flex;
@@ -607,26 +607,26 @@ body {
   transition: 400ms all;
   position: relative;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .img-bottom {
+.popular .mySwiper2 .swiper-slider .slide-item .img-bottom {
   transform: scale(0);
   transition: 400ms all;
   width: 100%;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .img-bottom ul {
+.popular .mySwiper2 .swiper-slider .slide-item .img-bottom ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
   padding: 0 25px;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .img-bottom ul img {
+.popular .mySwiper2 .swiper-slider .slide-item .img-bottom ul img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   height: 100%;
   max-height: 60px;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .like {
+.popular .mySwiper2 .swiper-slider .slide-item .like {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -640,26 +640,26 @@ body {
   transform: scale(0);
   cursor: pointer;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .like i {
+.popular .mySwiper2 .swiper-slider .slide-item .like i {
   color: #fff;
   font-size: 23px;
 }
-#popular .mySwiper2 .swiper-slider .slide-item:hover {
+.popular .mySwiper2 .swiper-slider .slide-item:hover {
   background: #FFFFFF;
   box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.13);
 }
-#popular .mySwiper2 .swiper-slider .slide-item:hover .like {
+.popular .mySwiper2 .swiper-slider .slide-item:hover .like {
   transform: scale(1.1);
 }
-#popular .mySwiper2 .swiper-slider .slide-item:hover button {
+.popular .mySwiper2 .swiper-slider .slide-item:hover button {
   transform: scale(1.1);
 }
-#popular .mySwiper2 .swiper-slider .slide-item:hover .img-bottom {
+.popular .mySwiper2 .swiper-slider .slide-item:hover .img-bottom {
   transform: scale(1);
   visibility: visible;
   opacity: 1;
 }
-#popular .mySwiper2 .swiper-slider .slide-item img {
+.popular .mySwiper2 .swiper-slider .slide-item img {
   margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -668,7 +668,7 @@ body {
   max-width: 215px;
   height: 190px;
 }
-#popular .mySwiper2 .swiper-slider .slide-item button {
+.popular .mySwiper2 .swiper-slider .slide-item button {
   cursor: pointer;
   transition: 400ms all;
   transform: scale(0);
@@ -690,11 +690,11 @@ body {
   color: #FFFFFF;
   border: none;
 }
-#popular .mySwiper2 .swiper-slider .slide-item button i {
+.popular .mySwiper2 .swiper-slider .slide-item button i {
   margin-right: 10px;
   color: #fff;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .title {
+.popular .mySwiper2 .swiper-slider .slide-item .title {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -702,7 +702,7 @@ body {
   line-height: 27px;
   color: #000000;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .code {
+.popular .mySwiper2 .swiper-slider .slide-item .code {
   padding-top: 4px;
   padding-bottom: 6px;
   display: block;
@@ -713,7 +713,7 @@ body {
   line-height: 18px;
   color: #6C6C6C;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .price .old-price {
+.popular .mySwiper2 .swiper-slider .slide-item .price .old-price {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -723,7 +723,7 @@ body {
   text-decoration-line: line-through;
   color: #00477F;
 }
-#popular .mySwiper2 .swiper-slider .slide-item .price .current-price {
+.popular .mySwiper2 .swiper-slider .slide-item .price .current-price {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;

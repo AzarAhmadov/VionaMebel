@@ -17,7 +17,7 @@ export default function SimilarProduct() {
     }
 
     return (
-        <section style={{ padding: "0" }} id='popular'>
+        <section style={{ padding: "0" }} className='popular'>
             <Container>
                 <div className="top-title">
                     <h4>
