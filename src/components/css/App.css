@@ -545,6 +545,9 @@ body {
   color: #AF1111;
 }
 
+#popular {
+  padding-top: 60px;
+}
 #popular .mySwiper2 {
   margin-top: 20px;
   display: flex;

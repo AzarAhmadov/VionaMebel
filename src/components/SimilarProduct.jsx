@@ -6,16 +6,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import Container from './home/Container';
-import Modal from './Modal';
 export default function SimilarProduct() {
     return (
-        <section id='popular'>
+        <section style={{padding:"0"}} id='popular'>
             <Container>
                 <div className="top-title">
                     <h4>
-                        MƏHSULLAR
+                        OXŞAR MƏHSULLAR
                         <span>
-                            Məhsullar
+                            Oxşar məhsullar
                         </span>
                     </h4>
                 </div>

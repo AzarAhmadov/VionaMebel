@@ -9,7 +9,7 @@ import Container from './Container';
 export default function PopularProduct() {
 
     return (
-        <section id='popular'>
+        <section className='popular' id='popular'>
             <Container>
                 <div className="top-title">
                     <h4>
