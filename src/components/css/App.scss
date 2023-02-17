@@ -2096,9 +2096,7 @@ aside {
       }
 
       .aside-item {
-
         .Specialties {
-
           .top {
             text-align: start;
             margin: 0;
@@ -2267,6 +2265,32 @@ aside {
 }
 
 @media only screen and (max-width:578px) {
+  #popular .mySwiper2 .swiper-slider .slide-item img {
+    max-width: 290px;
+  }
+
+  aside {
+    .aside-content {
+      .aside-item{
+        .Specialties{
+          padding: 10px 0;
+        }
+      }
+      .close {
+        top: -20px;
+      }
+
+      .title {
+        margin-top: 10px;
+      }
+
+      img {
+        object-fit: contain;
+        height: 240px;
+        width: 100%;
+      }
+    }
+  }
 
   #header {
     .logo {

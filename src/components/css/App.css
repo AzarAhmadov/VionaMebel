@@ -1887,6 +1887,24 @@ aside::after {
   }
 }
 @media only screen and (max-width: 578px) {
+  #popular .mySwiper2 .swiper-slider .slide-item img {
+    max-width: 290px;
+  }
+  aside .aside-content .aside-item .Specialties {
+    padding: 10px 0;
+  }
+  aside .aside-content .close {
+    top: -20px;
+  }
+  aside .aside-content .title {
+    margin-top: 10px;
+  }
+  aside .aside-content img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 240px;
+    width: 100%;
+  }
   #header .logo img {
     width: 170px;
   }
