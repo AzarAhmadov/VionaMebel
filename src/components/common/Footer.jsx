@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Container from '../home/Container';
 export default function Footer() {
     return (
@@ -11,7 +12,7 @@ export default function Footer() {
                     <li className='top'>
                         <li><a href="#"> Haqqımızda </a></li>
                         <li><a href="#"> Məhsullar </a></li>
-                        <li><a href="#"> Mağazalarımız </a></li>
+                        <li><Link to="/magazalar"> Mağazalarımız </Link></li>
                         <li><a href="#"> Əlaqə </a></li>
                     </li>
                     <li className='top'>

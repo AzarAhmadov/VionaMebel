@@ -4,6 +4,7 @@ import Footer from '../common/Footer';
 import Header from '../common/Header';
 import Detail from '../Detail';
 import Home from '../home/Home';
+import ShoppingCentre from '../ShoppingCentre';
 export default function Pages() {
     return (
         <>
@@ -12,6 +13,7 @@ export default function Pages() {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/mehsul' element={<Detail />} />
+                    <Route path='/magazalar' element={<ShoppingCentre />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

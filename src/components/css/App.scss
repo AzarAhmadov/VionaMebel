@@ -1991,6 +1991,60 @@ aside {
   }
 }
 
+.banner-global {
+  width: 100%;
+  height: 320px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+
+  img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+}
+
+.shooping {
+  padding-right: 30px;
+  margin-top: 48px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    .shopping-item {
+      margin-bottom: 79px;
+      position: relative;
+      width: max-content;
+
+      img {
+        width: 100%;
+      }
+
+      span {
+        position: absolute;
+        bottom: 7px;
+        right: 0px;
+        background: #00477F;
+        width: 320px;
+        height: 100px;
+        border-radius: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
 // Responsive
 
 @media only screen and (max-width:1200px) {
@@ -2027,6 +2081,25 @@ aside {
 
       .right {
         display: none;
+      }
+    }
+  }
+
+  .shooping {
+    padding-right: 0px;
+    .row {
+      .shopping-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          bottom: 0;
+        }
+
+        img {
+          width: 480px;
+        }
       }
     }
   }
@@ -2073,6 +2146,30 @@ aside {
 }
 
 @media only screen and (max-width:992px) {
+  .shooping {
+    margin-bottom: 144px;
+
+    .row {
+      flex-direction: column;
+      gap: 59px;
+
+      .shopping-item {
+        margin: 0 auto;
+        width: max-content;
+
+
+        span {
+          right: 0px;
+          bottom: 0px;
+        }
+
+        img {
+          width: 470px;
+        }
+      }
+    }
+  }
+
   aside {
     position: fixed;
     top: 0px;
@@ -2271,6 +2368,28 @@ aside {
 }
 
 @media only screen and (max-width:578px) {
+  .shooping {
+    margin-bottom: 50px;
+
+    .row {
+      flex-direction: column;
+      gap: 39px;
+
+      .shopping-item {
+
+        span {
+          font-size: 22px;
+          width: 280px;
+          height: 60px;
+        }
+
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+
   #popular .mySwiper2 .swiper-slider .slide-item img {
     max-width: 290px;
   }
