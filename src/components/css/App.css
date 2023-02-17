@@ -546,6 +546,10 @@ body {
   color: #AF1111;
 }
 
+.popular2 .swiper-slider {
+  height: 430px !important;
+}
+
 .popular {
   padding-top: 60px;
 }

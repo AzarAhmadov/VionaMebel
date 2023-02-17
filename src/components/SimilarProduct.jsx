@@ -17,7 +17,7 @@ export default function SimilarProduct() {
     }
 
     return (
-        <section style={{ padding: "0" }} className='popular'>
+        <section style={{ padding: "0" }} className='popular popular2'>
             <Container>
                 <div className="top-title">
                     <h4>
@@ -57,7 +57,7 @@ export default function SimilarProduct() {
                             return (
                                 el.category === 'similarProduct' ?
                                     <SwiperSlide key={idx} className='swiper-slider'>
-                                        <div onClick={() => getData(el.images, el.title, el.code, el.oldPrice, el.currentPrice)} className="slide-item">
+                                        <div onClick={() => getData(el.images, el.title, el.code, el.oldPrice, el.currentPrice)} className="slide-item" style={{paddingBottom:'40px'}}>
                                             <img src={el.images} alt="" />
                                             <div className="img-bottom">
                                                 <ul>
@@ -73,10 +73,6 @@ export default function SimilarProduct() {
                                                     <span className='old-price'> {el.oldPrice}</span>
                                                     <span className='current-price'>{el.currentPrice}</span>
                                                 </div>
-                                            </div>
-                                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                                            <div className="like">
-                                                <i className="fa-regular fa-heart"></i>
                                             </div>
                                         </div>
                                     </SwiperSlide> : null

@@ -186,7 +186,6 @@ export const allProduct = [{
 
 {
     images: './images/pop4.png',
-    images_bottom: './images/pop4.png',
     title: "Divan",
     code: "v2ghjkl345",
     oldPrice: "2.700₼",
@@ -195,7 +194,6 @@ export const allProduct = [{
 },
 {
     images: './images/dd2.png',
-    images_bottom: './images/dd2.png',
     title: "Divan",
     code: "v2ghjkl345",
     oldPrice: "2.700₼",
@@ -204,7 +202,6 @@ export const allProduct = [{
 },
 {
     images: './images/pop1.png',
-    images_bottom: './images/pop1.png',
     title: "Kreslo",
     code: "v2ghjkl345",
     oldPrice: "2.700₼",
@@ -213,7 +210,6 @@ export const allProduct = [{
 },
 {
     images: './images/dd3.png',
-    images_bottom: './images/dd3.png',
     title: "Divan",
     code: "v2ghjkl345",
     oldPrice: "2.700₼",
@@ -222,7 +218,6 @@ export const allProduct = [{
 },
 {
     images: './images/pop1.png',
-    images_bottom: './images/pop1.png',
     title: "Kreslo",
     code: "v2ghjkl345",
     oldPrice: "2.700₼",
@@ -231,7 +226,6 @@ export const allProduct = [{
 },
 {
     images: './images/dd3.png',
-    images_bottom: './images/dd3.png',
     title: "Divan",
     code: "v2ghjkl345",
     oldPrice: "2.700₼",
@@ -240,7 +234,6 @@ export const allProduct = [{
 },
 {
     images: './images/dd3.png',
-    images_bottom: './images/dd3.png',
     title: "Divan",
     code: "v2ghjkl345",
     oldPrice: "2.700₼",
