@@ -2569,10 +2569,14 @@ aside {
   aside {
     background: #fff;
     overflow: auto;
-    padding-top: 70px;
+    padding-top: 120px;
 
     img {
       height: 160px;
+    }
+
+    .close{
+      top: 0 !important;
     }
 
     &::after {

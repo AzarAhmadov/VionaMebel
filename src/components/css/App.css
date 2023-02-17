@@ -2082,10 +2082,13 @@ aside::after {
   aside {
     background: #fff;
     overflow: auto;
-    padding-top: 70px;
+    padding-top: 120px;
   }
   aside img {
     height: 160px;
+  }
+  aside .close {
+    top: 0 !important;
   }
   aside::after {
     background: #fff;
