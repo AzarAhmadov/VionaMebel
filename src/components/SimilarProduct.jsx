@@ -1,4 +1,5 @@
 import React from 'react'
+import { allProduct } from './data/data'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,7 +9,7 @@ import Container from './home/Container';
 import Modal from './Modal';
 export default function SimilarProduct() {
     return (
-        <section className='swiperSLideGlobal'>
+        <section id='popular'>
             <Container>
                 <div className="top-title">
                     <h4>
@@ -43,145 +44,39 @@ export default function SimilarProduct() {
                         },
                     }}
                 >
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/pop4.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Divan</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/dd2.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Divan</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/pop1.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Kreslo</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/dd3.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Divan</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/pop4.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Divan</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/pop6.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Divan</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/pop1.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Divan</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper-slider'>
-                        <div className="slide-item">
-                            <img src="../images/pop3.png" alt="" />
-                            <div className="slide-content">
-                                <h5 className='title'>Divan</h5>
-                                <span className="code">v2ghjkl345</span>
-                                <div className="price">
-                                    <span className='old-price'> 3.700₼ </span>
-                                    <span className='current-price'>2.990₼</span>
-                                </div>
-                            </div>
-                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                            <div className="like">
-                                <i className="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
+                    {
+                        allProduct.map((el, idx) => {
+                            return (
+                                el.category === 'similarProduct' ?
+                                    <SwiperSlide key={idx} className='swiper-slider'>
+                                        <div className="slide-item">
+                                            <img src={el.images} alt="" />
+                                            <div className="img-bottom">
+                                                <ul>
+                                                    <li><img src={el.images_bottom} alt="" /></li>
+                                                    <li><img src={el.images_bottom} alt="" /></li>
+                                                    <li><img src={el.images_bottom} alt="" /></li>
+                                                </ul>
+                                            </div>
+                                            <div className="slide-content">
+                                                <h5 className='title'>{el.title}</h5>
+                                                <span className="code">{el.code}</span>
+                                                <div className="price">
+                                                    <span className='old-price'> {el.oldPrice}</span>
+                                                    <span className='current-price'>{el.currentPrice}</span>
+                                                </div>
+                                            </div>
+                                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
+                                            <div className="like">
+                                                <i className="fa-regular fa-heart"></i>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide> : null
+                            )
+                        })
+                    }
 
-                <Modal/>
+                </Swiper>
             </Container>
         </section>
     )

@@ -182,4 +182,129 @@ export const allProduct = [{
         category: 'products'
     },
 
+    // Similar Products
+
+    {
+        images: './images/pop4.png',
+        images_bottom: './images/pop4.png',
+        title: "Divan",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/dd2.png',
+        images_bottom: './images/dd2.png',
+        title: "Divan",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/pop1.png',
+        images_bottom: './images/pop1.png',
+        title: "Kreslo",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/dd3.png',
+        images_bottom: './images/dd3.png',
+        title: "Divan",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/pop1.png',
+        images_bottom: './images/pop1.png',
+        title: "Kreslo",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/dd3.png',
+        images_bottom: './images/dd3.png',
+        title: "Divan",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/dd3.png',
+        images_bottom: './images/dd3.png',
+        title: "Divan",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+
+    // TogetherProducts
+
+    {
+        images: './images/t1.png',
+        title: "Stul",
+        code: "v2ghjkl345",
+        oldPrice: "700₼",
+        currentPrice: "500₼",
+        category: "TogetherProducts"
+    },
+    {
+        images: './images/t2.png',
+        title: "Jurnal masası",
+        code: "v2ghjkl345",
+        oldPrice: "1.700₼",
+        currentPrice: "1.590₼",
+        category: "TogetherProducts"
+    },
+    {
+        images: './images/t3.png',
+        title: "Jurnal",
+        code: "v2ghjkl345",
+        currentPrice: "1.190₼",
+        category: "TogetherProducts",
+    },
+    {
+        images: './images/t4.png',
+        title: "Kreslo",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.290₼",
+        category: "TogetherProducts"
+    },
+    {
+        images: './images/t2.png',
+        title: "Jurnal masası",
+        code: "v2ghjkl345",
+        oldPrice: "1.700₼",
+        currentPrice: "1.590₼",
+        category: "TogetherProducts"
+    },
+    {
+        images: './images/t3.png',
+        title: "Jurnal",
+        code: "v2ghjkl345",
+        currentPrice: "1.190₼",
+        category: "TogetherProducts"
+    },
+    {
+        images: './images/t4.png',
+        title: "Kreslo",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.290₼",
+        category: "TogetherProducts",
+        classname: "left"
+    },
+
+
 ]
