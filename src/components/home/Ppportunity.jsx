@@ -25,7 +25,6 @@ export default function Ppportunity() {
                         keyboard={true}
                         modules={[Navigation, Mousewheel, Keyboard]}
                         className="mySwiper4">
-
                         <SwiperSlide className='slide'>
                             <div className="slide-item">
                                 <div className="left">

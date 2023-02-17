@@ -1,4 +1,5 @@
 import React from 'react'
+import { allProduct } from '../data/data';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,54 +21,25 @@ export default function Slider() {
                     },
                     1024: {
                         slidesPerView: 5,
-                        spaceBetween: 50,
+                        spaceBetween: 0,
                     },
                 }}
                 slidesPerView={5}
                 className="mySwiper3">
 
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="../images/b1.png" alt="" />
-                        <a className='blue' href="#"> YUMŞAQ MEBEL </a>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="../images/b2.png" alt="" />
-                        <a className='green' href="#"> STOL-STUL </a>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="../images/b3.png" alt="" />
-                        <a className='blue' href="#"> QONAQ OTAĞI </a>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="../images/b4.png" alt="" />
-                        <a className='green' href="#"> YATAQ OTAĞI </a>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="../images/b5.png" alt="" />
-                        <a className='blue' href="#"> MƏTBƏX </a>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="../images/b4.png" alt="" />
-                        <a className='green' href="#"> YATAQ OTAĞI </a>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="swiper-item">
-                        <img src="../images/b5.png" alt="" />
-                        <a className='blue' href="#"> MƏTBƏX </a>
-                    </div>
-                </SwiperSlide>
+                {
+                    allProduct.map((el, idx) => {
+                        return (
+                            el.category === 'slider' ?
+                                <SwiperSlide key={idx} >
+                                    <div className="swiper-item">
+                                        <img src={el.images} alt="" />
+                                        <a className={el.color} href="#"> {el.txt} </a>
+                                    </div>
+                                </SwiperSlide> : null
+                        )
+                    })
+                }
             </Swiper>
         </section>
     )
