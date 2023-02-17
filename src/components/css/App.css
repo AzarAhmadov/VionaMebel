@@ -417,6 +417,7 @@ body {
   padding-left: 25px;
 }
 .swiperSLideGlobal .mySwiper2 .swiper-slider .slide-item {
+  padding: 10px;
   padding-top: 65px;
   padding-bottom: 18px;
   display: flex;
@@ -1536,6 +1537,167 @@ body {
   color: #303030;
 }
 
+aside {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+aside .close {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #00477F;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+aside .close i {
+  font-size: 20px;
+}
+aside img {
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+aside .aside-content {
+  width: 40%;
+  position: relative;
+  z-index: 10;
+  color: #000;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  right: 0px;
+}
+aside .aside-content .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 27px;
+  color: #000000;
+}
+aside .aside-content .code {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6C6C6C;
+  padding-top: 6px;
+  padding-bottom: 11px;
+  display: block;
+}
+aside .aside-content .price .old-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 21px;
+  text-decoration-line: line-through;
+  color: #00477F;
+  margin-right: 20px;
+}
+aside .aside-content .price .current-price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  color: #AF1111;
+}
+aside .aside-content a {
+  margin-top: 20px;
+  width: 100%;
+  height: 56px;
+  background: #00477F;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+aside .aside-content .aside-item {
+  background: #F5F5F5;
+  margin-top: 20px;
+}
+aside .aside-content .aside-item .Specialties {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  border-radius: 10px;
+}
+aside .aside-content .aside-item .Specialties .top {
+  padding-left: 80px;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 27px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+aside .aside-content .aside-item .Specialties .Specialties-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-self: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+aside .aside-content .aside-item .Specialties .Specialties-row div {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  justify-content: center;
+}
+aside .aside-content .aside-item .Specialties .Specialties-row span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #858585;
+  display: block;
+  margin: 5px 0;
+}
+aside .aside-content .aside-item .Specialties .Specialties-row p {
+  padding: 10px 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #515050;
+}
+aside::after {
+  content: "";
+  width: 40%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  right: 0px;
+}
+
 @media only screen and (max-width: 1200px) {
   #header .left {
     display: flex;
@@ -1587,6 +1749,48 @@ body {
   }
 }
 @media only screen and (max-width: 992px) {
+  aside {
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  aside .close {
+    top: -20px;
+    left: 20px;
+  }
+  aside .aside-content {
+    width: 100%;
+    right: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  aside .aside-content .title {
+    margin-top: 20px;
+  }
+  aside .aside-content .aside-item .Specialties .top {
+    text-align: start;
+    margin: 0;
+    padding-left: 20px;
+  }
+  aside .aside-content .aside-item .Specialties .Specialties-row {
+    padding-left: 20px;
+    width: 100%;
+  }
+  aside .aside-content .aside-item .Specialties .Specialties-row div {
+    flex-basis: 50%;
+    padding: 0;
+  }
+  aside::after {
+    content: "";
+    width: 100%;
+  }
   #client .row .client-item {
     margin: 0 auto;
     flex-direction: column;
@@ -1659,7 +1863,7 @@ body {
     margin-bottom: 30px;
   }
   #footer ul .right {
-    margin-top: 10px;
+    margin-top: 20px;
     width: -moz-max-content;
     width: max-content;
   }
@@ -1854,5 +2058,18 @@ body {
   }
   #footer .logo img {
     width: 230px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  aside {
+    background: #fff;
+    overflow: auto;
+    padding-top: 70px;
+  }
+  aside img {
+    height: 160px;
+  }
+  aside::after {
+    background: #fff;
   }
 }/*# sourceMappingURL=App.css.map */

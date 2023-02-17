@@ -27,8 +27,6 @@ export default function Detail() {
         icon.current.classList.toggle('active')
     }
 
-    const modal = useState(false)
-
     return (
         <section id='detail'>
             <Container>

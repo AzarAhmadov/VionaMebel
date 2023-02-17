@@ -306,5 +306,28 @@ export const allProduct = [{
         classname: "left"
     },
 
+    // Clients
+
+    {
+        clientPhoto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        clientTxt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry’ s standard dummy text ever since the 1500 s… ",
+        category: "client",
+        star1:<i className="fa-solid fa-star"></i>,
+        star2:<i className="fa-solid fa-star"></i>,
+        star3:<i className="fa-solid fa-star"></i>,
+        star4:<i className="fa-solid fa-star"></i>,
+        star5:<i className="fa-solid fa-star"></i>,
+        
+    },
+    {
+        clientPhoto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoHwIU8pKSlpCu__YMJJZr5ksg1H0lIPGcSZTDSri2&s",
+        clientTxt: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry’ s standard dummy text ever since the 1500 s… ",
+        category: 'client',
+        star1:<i className="fa-solid fa-star"></i>,
+        star2:<i className="fa-solid fa-star"></i>,
+        star3:<i className="fa-solid fa-star"></i>,
+        star4:<i className="fa-solid fa-star"></i>,
+        starI:<i className="fa-regular fa-star"></i>,
+    },
 
 ]

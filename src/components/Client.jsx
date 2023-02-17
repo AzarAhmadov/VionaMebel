@@ -1,4 +1,5 @@
 import React from 'react'
+import { allProduct } from './data/data';
 
 export default function Client() {
     return (
@@ -12,42 +13,43 @@ export default function Client() {
                 </h4>
             </div>
             <div className="row">
-                <div className="client-item">
-                    <div className="left">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="" />
-                        <ul>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-solid fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div className="right-item">
-                        <p>
-                            “Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s…”
-                        </p>
-                    </div>
-                </div>
-                <div className="client-item">
-                    <div className="left">
-                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
-                        <ul>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-solid fa-star"></i></li>
-                            <li><i className="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div className="right-item">
-                        <p>
-                            “Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s…”
-                        </p>
-                    </div>
-                </div>
+                {
+                    allProduct.map((el, idx) => {
+                        return (
+                            el.category === 'client' ?
+                                <div key={idx} className="client-item">
+                                    <div className="left">
+                                        <img src={el.clientPhoto} alt="" />
+                                        <ul>
+                                            <li>
+                                                {el.star1}
+                                            </li>
+                                            <li>
+                                                {el.star2}
+                                            </li>
+                                            <li>
+                                                {el.star3}
+                                            </li>
+                                            <li>
+                                                {el.star4}
+                                            </li>
+                                            <li>
+                                                {el.star5}
+                                            </li>
+                                            <li>
+                                                {el.starI}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="right-item">
+                                        <p>
+                                            {el.clientTxt}
+                                        </p>
+                                    </div>
+                                </div> : null
+                        )
+                    })
+                }
             </div>
         </section>
     )
