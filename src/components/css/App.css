@@ -1564,7 +1564,7 @@ aside .close i {
   font-size: 20px;
 }
 aside img {
-  height: 250px;
+  height: 255px;
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -1583,7 +1583,7 @@ aside .aside-content {
 aside .aside-content .title {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 25px;
   line-height: 27px;
   color: #000000;

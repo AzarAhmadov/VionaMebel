@@ -1837,7 +1837,7 @@ aside {
   }
 
   img {
-    height: 250px;
+    height: 255px;
     object-fit: contain;
     width: 100%;
   }
@@ -1855,7 +1855,7 @@ aside {
     .title {
       font-family: 'Poppins';
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 25px;
       line-height: 27px;
       color: #000000;
@@ -2271,11 +2271,12 @@ aside {
 
   aside {
     .aside-content {
-      .aside-item{
-        .Specialties{
+      .aside-item {
+        .Specialties {
           padding: 10px 0;
         }
       }
+
       .close {
         top: -20px;
       }
@@ -2575,7 +2576,7 @@ aside {
       height: 160px;
     }
 
-    .close{
+    .close {
       top: 0 !important;
     }
 
