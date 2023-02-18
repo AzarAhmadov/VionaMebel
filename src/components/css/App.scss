@@ -2087,6 +2087,7 @@ aside {
 
   .shooping {
     padding-right: 0px;
+
     .row {
       .shopping-item {
         display: flex;
@@ -2376,6 +2377,8 @@ aside {
       gap: 39px;
 
       .shopping-item {
+        margin-left: 0;
+        width: 100%;
 
         span {
           font-size: 22px;
@@ -2384,7 +2387,8 @@ aside {
         }
 
         img {
-          width: 350px;
+          padding-left: 0;
+          width: 100%;
         }
       }
     }

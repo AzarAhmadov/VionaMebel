@@ -1982,13 +1982,18 @@ aside::after {
     flex-direction: column;
     gap: 39px;
   }
+  .shooping .row .shopping-item {
+    margin-left: 0;
+    width: 100%;
+  }
   .shooping .row .shopping-item span {
     font-size: 22px;
     width: 280px;
     height: 60px;
   }
   .shooping .row .shopping-item img {
-    width: 350px;
+    padding-left: 0;
+    width: 100%;
   }
   #popular .mySwiper2 .swiper-slider .slide-item img {
     max-width: 290px;
