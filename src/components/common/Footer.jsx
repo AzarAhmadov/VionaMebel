@@ -10,7 +10,7 @@ export default function Footer() {
                         <img src="../images/logof.png" alt="" />
                     </li>
                     <li className='top'>
-                        <li><a href="#"> Haqqımızda </a></li>
+                        <li><Link to="/haqqımızda"> Haqqımızda </Link></li>
                         <li><a href="#"> Məhsullar </a></li>
                         <li><Link to="/magazalar"> Mağazalarımız </Link></li>
                         <li><a href="#"> Əlaqə </a></li>

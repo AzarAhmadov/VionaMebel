@@ -324,3 +324,54 @@ export const allProduct = [{
 },
 
 ]
+
+export const shoppingCentre = [
+    {
+        images: "./images/shopping1.png",
+        shoppingName: "Yasamal filialı"
+    },
+    {
+        images: "./images/shopping2.png",
+        shoppingName: "Babək prospekti, 64d"
+    },
+
+    {
+        images: "./images/shopping3.png",
+        shoppingName: " İnqilab filialı"
+    },
+    {
+        images: "./images/shopping4.png",
+        shoppingName: "  Babək filialı"
+    }
+
+]
+
+export const portnyor = [
+    {
+        images: '../images/pr1.png'
+    },
+    {
+        images: '../images/pr2.png'
+    },
+    {
+        images: '../images/pr3.png'
+    },
+    {
+        images: '../images/pr4.png'
+    },
+    {
+        images: '../images/pr5.png'
+    },
+    {
+        images: '../images/pr2.png'
+    },
+    {
+        images: '../images/pr3.png'
+    },
+    {
+        images: '../images/pr4.png'
+    },
+    {
+        images: '../images/pr5.png'
+    },
+]

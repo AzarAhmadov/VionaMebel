@@ -55,8 +55,8 @@ export default function SimilarProduct() {
                         allProduct.map((el, idx) => {
                             return (
                                 el.category === 'TogetherProducts' ?
-                                    <SwiperSlide key={idx} className='swiper-slider'>
-                                        <div onClick={() => getData(el.images, el.title, el.code, el.oldPrice, el.currentPrice)} className="slide-item">
+                                    <SwiperSlide style={{ height: "520px" }} key={idx} className='swiper-slider'>
+                                        <div style={{ paddingBottom: "40px" }} onClick={() => getData(el.images, el.title, el.code, el.oldPrice, el.currentPrice)} className="slide-item">
                                             <img className='slide-mobile' src={el.images} alt="" />
                                             <div style={{ paddingLeft: "0px", paddingTop: "20px" }} className="slide-content">
                                                 <h5 className='title'>{el.title}</h5>
@@ -68,13 +68,8 @@ export default function SimilarProduct() {
                                                     <span className='current-price'>{el.currentPrice}</span>
                                                 </div>
                                             </div>
-                                            <button> <i className="fa-solid fa-cart-shopping"></i> Səbətə at</button>
-                                            <div className="like">
-                                                <i className="fa-regular fa-heart"></i>
-                                            </div>
                                         </div>
                                     </SwiperSlide> : null
-
                             )
                         })
                     }

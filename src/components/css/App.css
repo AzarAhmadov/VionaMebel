@@ -188,6 +188,26 @@ body {
   margin-right: 10px;
 }
 
+#portnyor .mySwiper6 .swiper-pagination-bullet-active {
+  width: 15px !important;
+  height: 15px !important;
+  background: #00477F !important;
+}
+#portnyor .mySwiper6 .swiper-horizontal > .swiper-pagination-bullets,
+#portnyor .mySwiper6 .swiper-pagination-bullets.swiper-pagination-horizontal,
+#portnyor .mySwiper6 .swiper-pagination-custom,
+#portnyor .mySwiper6 .swiper-pagination-fraction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+#portnyor .mySwiper6 .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #D9D9D9;
+}
+
 #banner {
   padding-top: 45px;
 }
@@ -1098,6 +1118,135 @@ body {
   line-height: 36px;
 }
 
+#about .container .about-row {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+}
+#about .container .about-row .left-item {
+  position: relative;
+}
+#about .container .about-row .left-item .img-abs {
+  position: absolute;
+  top: 165px;
+  left: 285px;
+}
+#about .container .about-row .right-item {
+  margin-left: 105px;
+}
+#about .container .about-row .right-item p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+#info {
+  margin-top: 138px;
+  padding-bottom: 125px;
+}
+#info .info-row .info-item-2 {
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+#info .info-row .info-item-2 .info-txt {
+  margin-right: 55px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  width: 530px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+#info .info-row .info-item-2 .left1 {
+  padding-left: 52px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  margin-right: 27px;
+}
+#info .info-row .info-item-2::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 560px;
+  height: 320px;
+  background: #5AA058;
+  border-radius: 10px;
+  right: 0;
+  z-index: -1;
+}
+#info .info-row .info-item-2::before {
+  z-index: 1000;
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 319.5px;
+  height: 360px;
+  background: url(../../../public/images/backImg2.png) no-repeat;
+}
+#info .info-row .info-item-2 .left {
+  display: flex;
+  align-items: center;
+}
+#info .info-row .info-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#info .info-row .info-item .info-txt {
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  width: 530px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+#info .info-row .info-item .left1 {
+  padding-left: 43px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  margin-right: 27px;
+}
+#info .info-row .info-item::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 560px;
+  height: 320px;
+  background: #00477F;
+  border-radius: 10px;
+}
+#info .info-row .info-item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 319.5px;
+  height: 360px;
+  background: url(../../../public/images/backImg.png) no-repeat;
+}
+#info .info-row .info-item .left {
+  display: flex;
+  align-items: center;
+}
+
 #footer {
   padding-top: 77px;
   padding-bottom: 160px;
@@ -1816,8 +1965,80 @@ aside::after {
   #detail .container .row .left .slide-area img {
     width: 100%;
   }
+  .banner-global {
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
+  #about .container .about-row {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+  #about .container .about-row .left-item .img-abs {
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+  }
+  #about .container .about-row .right-item {
+    padding-top: 130px;
+    margin-left: 0;
+  }
+  #info {
+    padding-bottom: 0;
+    margin-top: 40px;
+  }
+  #info .info-row .info-item {
+    padding: 10px 0;
+    flex-direction: column;
+  }
+  #info .info-row .info-item .info-txt {
+    color: #fff;
+    padding: 20px 0;
+    margin: 0;
+  }
+  #info .info-row .info-item .left {
+    flex-direction: column;
+  }
+  #info .info-row .info-item .left .left1 {
+    padding: 30px 0;
+    margin: 0;
+  }
+  #info .info-row .info-item::after {
+    width: 100%;
+    height: 100%;
+  }
+  #info .info-row .info-item::before {
+    background-size: 0;
+  }
+  #info .info-row .info-item-2 {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  #info .info-row .info-item-2 .info-txt {
+    padding-bottom: 30px;
+    color: #fff;
+    padding-top: 20px;
+    margin: 0;
+    order: 1;
+  }
+  #info .info-row .info-item-2 .left {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  #info .info-row .info-item-2 .left .left1 {
+    margin: 0;
+    order: -1;
+    padding-left: 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  #info .info-row .info-item-2::after {
+    width: 100%;
+    height: 100%;
+  }
+  #info .info-row .info-item-2::before {
+    background-size: 0;
+  }
   .shooping {
     margin-bottom: 144px;
   }
@@ -1975,6 +2196,46 @@ aside::after {
   }
 }
 @media only screen and (max-width: 578px) {
+  #about .container .about-row {
+    padding: 0;
+  }
+  #about .container .about-row .right-item {
+    margin-top: 20px;
+  }
+  #about .container .about-row .right-item p {
+    text-align: center;
+  }
+  #about .container .about-row .left-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #about .container .about-row .left-item .img-abs {
+    top: 190px;
+  }
+  #about .container .about-row .left-item .img-abs img {
+    width: 270px;
+  }
+  #about .container .about-row .left-item img {
+    width: 370px;
+  }
+  #portnyor {
+    margin-top: 50px;
+  }
+  #info {
+    margin-top: 20px;
+  }
+  #info .info-row img {
+    width: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #info .info-row p {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
   .shooping {
     margin-bottom: 50px;
   }

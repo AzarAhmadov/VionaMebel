@@ -7,7 +7,7 @@ import Container from './Container';
 
 export default function Banner() {
 
-    var countDate = new Date("Feb 19, 2023 00:00:00").getTime();
+    var countDate = new Date("Feb 27, 2023 00:00:00").getTime();
 
     function newYear() {
         var now = new Date().getTime();

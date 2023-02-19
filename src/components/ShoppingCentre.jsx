@@ -1,12 +1,13 @@
 import React from 'react'
 import Container from './home/Container'
+import { shoppingCentre } from './data/data'
+import BannerGlobal from './BannerGlobal';
 
 export default function ShoppingCentre() {
+    window.scrollTo(0, 0);
     return (
         <main>
-            <div className="banner-global">
-                <img src="../images/global.png" alt="" />
-            </div>
+            <BannerGlobal />
             <Container>
                 <div className="top-title">
                     <h4>
@@ -18,30 +19,18 @@ export default function ShoppingCentre() {
                 </div>
                 <section className='shooping'>
                     <div className="row">
-                        <div className="shopping-item">
-                            <img src="../images/shopping1.png" alt="" />
-                            <span>
-                                Yasamal filialı
-                            </span>
-                        </div>
-                        <div className="shopping-item">
-                            <img src="../images/shopping2.png" alt="" />
-                            <span>
-                                Babək prospekti, 64d
-                            </span>
-                        </div>
-                        <div className="shopping-item">
-                            <img src="../images/shopping3.png" alt="" />
-                            <span>
-                                İnqilab filialı
-                            </span>
-                        </div>
-                        <div className="shopping-item">
-                            <img src="../images/shopping4.png" alt="" />
-                            <span>
-                                Babək filialı
-                            </span>
-                        </div>
+                        {
+                            shoppingCentre.map((el, idx) => {
+                                return (
+                                    <div key={idx} className="shopping-item">
+                                        <img src={el.images} alt="" />
+                                        <span>
+                                            {el.shoppingName}
+                                        </span>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </section>
             </Container>
