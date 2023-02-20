@@ -36,6 +36,7 @@ export default function Filter() {
     useEffect(() => {
         changeSelect()
     }, [])
+    
     return (
         <div className='filters'>
             <div onClick={openFilter} className="filter-button-top">
@@ -184,25 +185,25 @@ export default function Filter() {
                         </div>
                     </div>
                     <div className="right-top form-bottom">
-                            <form action="">
-                                <div>
-                                    <select>
-                                        <option value="q">Qiymətinə görə</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <select>
-                                        <option value="p">Populyarlığına görə</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <select>
-                                        <option value="y">Yeni Kolleksiya</option>
-                                    </select>
-                                </div>
-                            </form>
-                            {window.scrollTo(0, 0)}
-                        </div>
+                        <form action="">
+                            <div>
+                                <select>
+                                    <option value="q">Qiymətinə görə</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select>
+                                    <option value="p">Populyarlığına görə</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select>
+                                    <option value="y">Yeni Kolleksiya</option>
+                                </select>
+                            </div>
+                        </form>
+                        {window.scrollTo(0, 0)}
+                    </div>
                 </div>
 
                 <div className="filter-button">

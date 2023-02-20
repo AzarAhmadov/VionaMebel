@@ -1471,13 +1471,14 @@ body {
   padding: 1px;
   border: 1px solid #00477F;
 }
-#detail .container .row .right .btn {
+#detail .container .row .right .btn-detail {
+  display: flex;
   width: 440px;
   margin-top: 30px;
   padding-left: 0;
   margin-left: 0;
 }
-#detail .container .row .right .btn .left {
+#detail .container .row .right .btn-detail .left {
   width: 200px;
   height: 60px;
   background: #F5F5F5;
@@ -1486,10 +1487,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-#detail .container .row .right .btn .left div {
+#detail .container .row .right .btn-detail .left div {
   display: flex;
 }
-#detail .container .row .right .btn .left button {
+#detail .container .row .right .btn-detail .left button {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -1498,7 +1499,7 @@ body {
   background: #D1D1D1;
   cursor: pointer;
 }
-#detail .container .row .right .btn .left span {
+#detail .container .row .right .btn-detail .left span {
   padding: 0 25px;
   display: block;
   font-family: "Poppins";
@@ -1508,10 +1509,10 @@ body {
   line-height: 27px;
   color: #363636;
 }
-#detail .container .row .right .btn .right {
+#detail .container .row .right .btn-detail .right {
   padding-left: 30px;
 }
-#detail .container .row .right .btn .right button {
+#detail .container .row .right .btn-detail .right button {
   width: 210px;
   height: 60px;
   display: flex;
@@ -1555,7 +1556,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 20px;
   justify-content: center;
 }
 #detail .container .row .right .Specialties .Specialties-row span {
@@ -2214,6 +2214,305 @@ aside::after {
   border-radius: 5px;
 }
 
+.modalArea {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(145, 143, 143, 0.55);
+  z-index: 100;
+}
+.modalArea .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #00477F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.modalArea .close i {
+  color: #00477F;
+}
+.modalArea .modalFilter {
+  padding-bottom: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 1050px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.modalArea .modalFilter .modal-row {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.modalArea .modalFilter .modal-row .modal-left {
+  width: 500px;
+  padding-top: 56px;
+  position: relative;
+}
+.modalArea .modalFilter .modal-row .modal-left .close {
+  position: absolute;
+  left: -30px;
+}
+.modalArea .modalFilter .modal-row .modal-left .modal-top {
+  margin-bottom: 20px;
+  padding-left: 59px;
+  display: flex;
+  justify-content: space-between;
+}
+.modalArea .modalFilter .modal-row .modal-left .modal-top i {
+  color: #5AA058;
+  font-size: 30px;
+}
+.modalArea .modalFilter .modal-row .modal-left .modal-top span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.modalArea .modalFilter .modal-row .modal-left .modal-top .p {
+  margin-top: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6C6C6C;
+}
+.modalArea .modalFilter .modal-row .modal-left a {
+  margin-top: 50px;
+  margin-left: 75px;
+  background: #5AA058;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.modalArea .modalFilter .modal-row .modal-left .swiper-button-prev::after,
+.modalArea .modalFilter .modal-row .modal-left .swiper-rtl .swiper-button-next {
+  background: #5AA058;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 21px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.modalArea .modalFilter .modal-row .modal-left .swiper-button-next {
+  right: 20px;
+}
+.modalArea .modalFilter .modal-row .modal-left .swiper-button-prev {
+  left: 20px;
+}
+.modalArea .modalFilter .modal-row .modal-left .swiper-button-next:after,
+.modalArea .modalFilter .modal-row .modal-left .swiper-rtl .swiper-button-prev:after {
+  background: #5AA058;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 21px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.modalArea .modalFilter .modal-row .modal-left img {
+  height: auto;
+  display: block;
+  width: 520px;
+}
+.modalArea .modalFilter .modal-row .modal-left .slide-bottom {
+  width: 100%;
+  height: 65px;
+}
+.modalArea .modalFilter .modal-row .modal-right {
+  margin-top: 55px;
+}
+.modalArea .modalFilter .modal-row .modal-right .price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #AF1111;
+}
+.modalArea .modalFilter .modal-row .modal-right .btn-detail {
+  display: flex;
+  width: 440px;
+  margin-top: 13px;
+  padding-left: 0;
+  margin-left: 0;
+}
+.modalArea .modalFilter .modal-row .modal-right .btn-detail .left {
+  width: 200px;
+  height: 60px;
+  background: #F5F5F5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalArea .modalFilter .modal-row .modal-right .btn-detail .left div {
+  display: flex;
+}
+.modalArea .modalFilter .modal-row .modal-right .btn-detail .left button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  background: #D1D1D1;
+  cursor: pointer;
+}
+.modalArea .modalFilter .modal-row .modal-right .btn-detail .left span {
+  padding: 0 25px;
+  display: block;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #363636;
+}
+.modalArea .modalFilter .modal-row .modal-right .btn-detail .right {
+  padding-left: 30px;
+}
+.modalArea .modalFilter .modal-row .modal-right .btn-detail .right button {
+  width: 210px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00477F;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.modalArea .modalFilter .modal-row .modal-right .Specialties {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 440px;
+  margin-top: 20px;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+.modalArea .modalFilter .modal-row .modal-right .Specialties .top {
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.modalArea .modalFilter .modal-row .modal-right .Specialties .Specialties-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.modalArea .modalFilter .modal-row .modal-right .Specialties .Specialties-row div {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.modalArea .modalFilter .modal-row .modal-right .Specialties .Specialties-row span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: #858585;
+  margin-top: 5px;
+  display: block;
+}
+.modalArea .modalFilter .modal-row .modal-right .Specialties .Specialties-row p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #515050;
+}
+.modalArea .modalFilter .modal-row .modal-right .dec i {
+  font-size: 20px;
+  transition: 300ms all;
+}
+.modalArea .modalFilter .modal-row .modal-right .dec i.active {
+  transform: rotate(180deg);
+}
+.modalArea .modalFilter .modal-row .modal-right .dec p {
+  margin-top: 10px;
+  width: 440px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 23px;
+  color: #000000;
+  max-height: 300px;
+  transition: max-height 2000ms ease-out;
+  overflow-y: hidden;
+}
+.modalArea .modalFilter .modal-row .modal-right .dec p.active {
+  max-height: 0;
+  transition: max-height 0.95s ease-out;
+  overflow: hidden;
+}
+.modalArea .modalFilter .modal-row .modal-right .dec .dec-top {
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 25px;
+  width: 440px;
+  height: 60px;
+  border: 1px solid #00477F;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modalArea .modalFilter .modal-row .modal-right .dec .dec-top span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
 @media only screen and (max-width: 1200px) {
   #filter {
     margin-top: 20px;
@@ -2285,6 +2584,96 @@ aside::after {
   }
 }
 @media only screen and (max-width: 992px) {
+  .modalArea .modalFilter {
+    padding-top: 370px;
+    overflow: auto;
+    max-height: 800px;
+  }
+  .modalArea .modalFilter a {
+    margin-left: 0 !important;
+  }
+  .modalArea .modalFilter .modal-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalArea .modalFilter .modal-row .modal-left {
+    width: 360px !important;
+    width: 375px;
+  }
+  .modalArea .modalFilter .modal-row .modal-left .close {
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
+  .modalArea .modalFilter .modal-row .modal-left .swiper-button-prev::after,
+  .modalArea .modalFilter .modal-row .modal-left .swiper-rtl .swiper-button-next {
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+  }
+  .modalArea .modalFilter .modal-row .modal-left .swiper-button-next:after,
+  .modalArea .modalFilter .modal-row .modal-left .swiper-rtl .swiper-button-prev:after {
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
+  }
+  .modalArea .modalFilter .modal-row .modal-left .modal-top {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .modalArea .modalFilter .modal-row .modal-left img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .modalArea .modalFilter .modal-row .modal-right {
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .Specialties {
+    width: 100%;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .dec {
+    width: 100%;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .dec .dec-top {
+    width: 100%;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .dec .dec-txt {
+    width: 100%;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .btn-detail {
+    flex-direction: column;
+    width: 100%;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .btn-detail .left {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .btn-detail .left div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .btn-detail .left div button {
+    width: 20px !important;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .btn-detail .right {
+    padding-left: 0;
+  }
+  .modalArea .modalFilter .modal-row .modal-right .detail-txt .btn-detail button {
+    width: 100%;
+  }
   .right-top {
     display: none;
   }
@@ -2478,7 +2867,7 @@ aside::after {
   }
   aside .aside-content .aside-item .Specialties .top {
     text-align: start;
-    margin: 0;
+    margin: 0 !important;
     padding-left: 20px;
   }
   aside .aside-content .aside-item .Specialties .Specialties-row {
@@ -2515,7 +2904,7 @@ aside::after {
   #detail .container .row .right .overwlov {
     width: 360px;
   }
-  #detail .container .row .right .btn {
+  #detail .container .row .right .btn-detail {
     margin-top: 0;
     justify-content: flex-start;
     align-items: flex-end;
@@ -2744,23 +3133,23 @@ aside::after {
   }
   #detail .container .row .right .Specialties {
     width: 100%;
-    padding: 25px 0;
+    padding: 25px 25px;
   }
-  #detail .container .row .right .btn {
+  #detail .container .row .right .btn-detail {
     width: 100%;
     margin: 0 auto;
   }
-  #detail .container .row .right .btn .left {
+  #detail .container .row .right .btn-detail .left {
     margin: 0 auto;
     width: 100%;
     display: flex;
   }
-  #detail .container .row .right .btn .right {
+  #detail .container .row .right .btn-detail .right {
     margin-left: 10px;
     padding: 0;
     width: 100%;
   }
-  #detail .container .row .right .btn .right button {
+  #detail .container .row .right .btn-detail .right button {
     width: 100%;
   }
   #banner .row .left-item img {
@@ -2867,6 +3256,11 @@ aside::after {
   }
 }
 @media only screen and (max-width: 375px) {
+  .modalArea .modalFilter {
+    padding-top: 570px;
+    max-height: 600px;
+    overflow: auto;
+  }
   aside {
     background: #fff;
     overflow: auto;

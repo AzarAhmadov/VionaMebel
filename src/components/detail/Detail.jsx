@@ -10,7 +10,7 @@ import SimilarProduct from './SimilarProduct';
 import TogetherProduct from './TogetherProduct';
 import Client from './Client';
 export default function Detail() {
-    
+
     window.scrollTo(0, 0);
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -171,66 +171,68 @@ export default function Detail() {
                                     </span>
                                 </div>
                             </div>
-                            <div className="btn">
-                                <div className="left">
-                                    <div>
-                                        <button>-</button>
-                                        <span>1</span>
-                                        <button>+</button>
+                            <div className='detail-txt'>
+                                <div className="btn-detail">
+                                    <div className="left">
+                                        <div>
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div className="right">
+                                        <button>
+                                            Səbətə at
+                                        </button>
                                     </div>
                                 </div>
-                                <div className="right">
-                                    <button>
-                                        Səbətə at
-                                    </button>
+                                <div className="Specialties">
+                                    <p className="top">
+                                        Xüsusiyyətləri
+                                    </p>
+                                    <div className="Specialties-row">
+                                        <div>
+                                            <span>
+                                                Hündürlük:
+                                            </span>
+                                            <p>
+                                                5 sm
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                Dərinlik:
+                                            </span>
+                                            <p>
+                                                5 sm
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <span>
+                                                En:
+                                            </span>
+                                            <p>
+                                                180 sm
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                2 oturacaqlı
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="Specialties">
-                                <p className="top">
-                                    Xüsusiyyətləri
-                                </p>
-                                <div className="Specialties-row">
-                                    <div>
+                                <div className="dec">
+                                    <div onClick={openModal} className="dec-top">
                                         <span>
-                                            Hündürlük:
+                                            Təsviri
                                         </span>
-                                        <p>
-                                            5 sm
-                                        </p>
+                                        <i ref={icon} class="fa-solid fa-chevron-up"></i>
                                     </div>
-                                    <div>
-                                        <span>
-                                            Dərinlik:
-                                        </span>
-                                        <p>
-                                            5 sm
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <span>
-                                            En:
-                                        </span>
-                                        <p>
-                                            180 sm
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <p>
-                                            2 oturacaqlı
-                                        </p>
-                                    </div>
+                                    <p ref={decTxt} className='dec-txt'>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                    </p>
                                 </div>
-                            </div>
-                            <div className="dec">
-                                <div onClick={openModal} className="dec-top">
-                                    <span>
-                                        Təsviri
-                                    </span>
-                                    <i ref={icon} class="fa-solid fa-chevron-up"></i>
-                                </div>
-                                <p ref={decTxt} className='dec-txt'>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                                </p>
                             </div>
                         </div>
                     </div>

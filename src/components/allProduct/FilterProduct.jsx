@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Container from '../home/Container'
+import ModalFilter from './ModalFilter'
 import { allProduct } from '../data/data'
 import Filter from './Filter'
 
@@ -83,6 +84,7 @@ export default function FilterProduct() {
                         })
                     }
                 </ul>
+                <ModalFilter />
             </Container>
         </main >
     )
