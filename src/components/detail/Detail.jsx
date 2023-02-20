@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import Container from './home/Container'
+import Container from '../home/Container'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -10,6 +10,7 @@ import SimilarProduct from './SimilarProduct';
 import TogetherProduct from './TogetherProduct';
 import Client from './Client';
 export default function Detail() {
+    
     window.scrollTo(0, 0);
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const overImg = document.querySelectorAll('.over-img')

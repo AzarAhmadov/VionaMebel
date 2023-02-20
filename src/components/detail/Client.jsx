@@ -1,5 +1,5 @@
 import React from 'react'
-import { allProduct } from './data/data';
+import { allProduct } from '../data/data';
 
 export default function Client() {
     return (

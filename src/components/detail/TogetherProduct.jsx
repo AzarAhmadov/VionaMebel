@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { allProduct } from './data/data';
+import { allProduct } from '../data/data';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import Container from './home/Container';
+import Container from '../home/Container';
 import Modal from './Modal';
 export default function SimilarProduct() {
     const [modal, setModal] = useState(false)

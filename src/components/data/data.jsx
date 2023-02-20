@@ -69,51 +69,6 @@ export const allProduct = [{
     category: "newProduct"
 },
 
-// Slider
-
-{
-    images: "./images/b1.png",
-    txt: 'YUMŞAQ MEBEL',
-    color: 'blue',
-    category: 'slider'
-},
-{
-    images: "./images/b2.png",
-    txt: 'STOL-STUL',
-    color: 'green',
-    category: 'slider'
-},
-{
-    images: "./images/b3.png",
-    txt: 'QONAQ OTAĞI',
-    color: 'blue',
-    category: 'slider',
-},
-{
-    images: "./images/b4.png",
-    txt: 'YATAQ OTAĞI',
-    color: 'green',
-    category: 'slider',
-},
-{
-    images: "./images/b5.png",
-    txt: 'MƏTBƏX',
-    color: 'blue',
-    category: 'slider',
-},
-{
-    images: "./images/b4.png",
-    txt: 'YATAQ OTAĞI',
-    color: 'green',
-    category: 'slider',
-},
-{
-    images: "./images/b5.png",
-    txt: 'MƏTBƏX',
-    color: 'blue',
-    category: 'slider',
-},
-
 // Products
 
 {
@@ -324,6 +279,52 @@ export const allProduct = [{
 },
 
 ]
+
+export const slider =
+    [
+        {
+            images: "./images/b1.png",
+            txt: 'YUMŞAQ MEBEL',
+            color: 'blue',
+            category: 'slider'
+        },
+        {
+            images: "./images/b2.png",
+            txt: 'STOL-STUL',
+            color: 'green',
+            category: 'slider'
+        },
+        {
+            images: "./images/b3.png",
+            txt: 'QONAQ OTAĞI',
+            color: 'blue',
+            category: 'slider',
+        },
+        {
+            images: "./images/b4.png",
+            txt: 'YATAQ OTAĞI',
+            color: 'green',
+            category: 'slider',
+        },
+        {
+            images: "./images/b5.png",
+            txt: 'MƏTBƏX',
+            color: 'blue',
+            category: 'slider',
+        },
+        {
+            images: "./images/b4.png",
+            txt: 'YATAQ OTAĞI',
+            color: 'green',
+            category: 'slider',
+        },
+        {
+            images: "./images/b5.png",
+            txt: 'MƏTBƏX',
+            color: 'blue',
+            category: 'slider',
+        },
+    ]
 
 export const shoppingCentre = [
     {

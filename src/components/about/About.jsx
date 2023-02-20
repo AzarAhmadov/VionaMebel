@@ -1,9 +1,9 @@
 import React from 'react'
-import BannerGlobal from './BannerGlobal'
-import Container from './home/Container'
+import BannerGlobal from '../BannerGlobal'
+import Container from '../home/Container'
 import Info from './Info'
-import WhyUs from '../components/home/WhyUs';
-import Skills from '../components/home/Skills';
+import WhyUs from '../home/WhyUs';
+import Skills from '../home/Skills';
 import Partnyor from './Partnyor';
 
 export default function About() {

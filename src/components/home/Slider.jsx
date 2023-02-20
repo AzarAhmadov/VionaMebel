@@ -1,5 +1,5 @@
 import React from 'react'
-import { allProduct } from '../data/data';
+import { slider } from '../data/data';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,15 +28,14 @@ export default function Slider() {
                 className="mySwiper3">
 
                 {
-                    allProduct.map((el, idx) => {
+                    slider.map((el, idx) => {
                         return (
-                            el.category === 'slider' ?
-                                <SwiperSlide key={idx} >
-                                    <div className="swiper-item">
-                                        <img src={el.images} alt="" />
-                                        <a className={el.color} href="#"> {el.txt} </a>
-                                    </div>
-                                </SwiperSlide> : null
+                            <SwiperSlide key={idx} >
+                                <div className="swiper-item">
+                                    <img src={el.images} alt="" />
+                                    <a className={el.color} href="#"> {el.txt} </a>
+                                </div>
+                            </SwiperSlide>
                         )
                     })
                 }

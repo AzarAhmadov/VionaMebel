@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-import { portnyor } from './data/data';
-import Container from './home/Container';
+import { portnyor } from '../data/data';
+import Container from '../home/Container';
 export default function Partnyor() {
     return (
         <section id='portnyor'>
@@ -41,7 +41,7 @@ export default function Partnyor() {
                         portnyor.map((el, idx) => {
                             return (
                                 <SwiperSlide key={idx} >
-                                    <div style={{display:"flex" ,  justifyContent:"center"}} className="swiper-item">
+                                    <div style={{ display: "flex", justifyContent: "center" }} className="swiper-item">
                                         <img src={el.images} alt="" />
                                     </div>
                                 </SwiperSlide>

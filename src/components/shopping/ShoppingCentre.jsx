@@ -1,7 +1,7 @@
 import React from 'react'
-import Container from './home/Container'
-import { shoppingCentre } from './data/data'
-import BannerGlobal from './BannerGlobal';
+import Container from '../home/Container'
+import { shoppingCentre } from '../data/data'
+import BannerGlobal from '../BannerGlobal';
 
 export default function ShoppingCentre() {
     window.scrollTo(0, 0);
