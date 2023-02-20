@@ -57,7 +57,7 @@ export default function SimilarProduct() {
                             return (
                                 el.category === 'similarProduct' ?
                                     <SwiperSlide key={idx} className='swiper-slider'>
-                                        <div onClick={() => getData(el.images, el.title, el.code, el.oldPrice, el.currentPrice)} className="slide-item" style={{paddingBottom:'40px'}}>
+                                        <div onClick={() => getData(el.images, el.title, el.code, el.oldPrice, el.currentPrice)} className="slide-item" style={{ paddingBottom: '40px' }}>
                                             <img src={el.images} alt="" />
                                             <div className="img-bottom">
                                                 <ul>

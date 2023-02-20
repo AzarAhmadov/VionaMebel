@@ -2729,9 +2729,12 @@ aside {
         }
 
         img {
-          height: auto;
+          margin: 0 auto;
           display: block;
-          width: 520px;
+          width: 340px;
+          height: 100%;
+          max-height: 250px;
+          object-fit: contain;
         }
 
         .slide-bottom {
@@ -3042,7 +3045,7 @@ aside {
 @media only screen and (max-width:992px) {
   .modalArea {
     .modalFilter {
-      padding-top: 370px;
+      padding-top: 420px;
       overflow: auto;
       max-height: 800px;
 
@@ -3087,7 +3090,8 @@ aside {
 
           img {
             width: 100%;
-            object-fit: contain;
+            max-height: 200px;
+            
           }
         }
 

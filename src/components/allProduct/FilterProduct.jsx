@@ -14,6 +14,23 @@ export default function FilterProduct() {
     const indexOfFirstItem = indexOfLastItem - perPage
     const visibleItem = item.slice(indexOfFirstItem, indexOfLastItem)
 
+    const [modal, setModal] = useState(
+        {
+            opacity: 0,
+            transition: "400ms all"
+        }
+    )
+
+    const [tempdata, setTempdata] = useState([])
+    const getData = (images, title, code, currentPrice) => {
+        let tempData = [title, images, code, currentPrice]
+        setTempdata(el => [1, ...tempData])
+        return setModal(true)
+    }
+
+    console.log(tempdata)
+
+
     return (
         <main>
             <Container>
@@ -45,7 +62,7 @@ export default function FilterProduct() {
                             {
                                 visibleItem.map((el, idx) => {
                                     return (
-                                        <div key={idx}>
+                                        <div onClick={() => getData(el.images, el.title, el.code, el.currentPrice)} key={idx}>
                                             {
                                                 el.images ? <img src={el.images} /> : null
                                             }
@@ -84,7 +101,9 @@ export default function FilterProduct() {
                         })
                     }
                 </ul>
-                <ModalFilter />
+                {
+                    modal === true ? <ModalFilter hide={() => setModal(false)} currentPrice={tempdata[4]} code={tempdata[3]} title={tempdata[1]} images={tempdata[2]} /> : null
+                }
             </Container>
         </main >
     )

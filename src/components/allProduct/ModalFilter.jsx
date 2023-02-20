@@ -5,7 +5,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper";
-export default function Modal() {
+export default function Modal({ modal, hide, images, title, code, currentPrice }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const decTxt = useRef()
   const icon = useRef()
@@ -16,20 +16,20 @@ export default function Modal() {
   }
 
   return (
-    <div className="modalArea">
+    <div style={modal} className="modalArea">
       <div className='modalFilter'>
         <div className="modal-row">
           <div className="modal-left">
-            <div className="close">
+            <div onClick={hide} className="close">
               <i class="fa-solid fa-x"></i>
             </div>
             <div className="modal-top">
               <div>
                 <span>
-                  Divan
+                  {title}
                 </span>
                 <p>
-                  v2ghjkl345
+                  {code}
                 </p>
               </div>
               <div>
@@ -46,22 +46,22 @@ export default function Modal() {
                 className="mySwiper2"
               >
                 <SwiperSlide>
-                  <img src="../images/detail.png" />
+                  <img src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="../images/detail.png" />
+                  <img src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="../images/detail.png" />
+                  <img src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="../images/detail.png" />
+                  <img src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="../images/detail.png" />
+                  <img src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="../images/detail.png" />
+                  <img src={images} />
                 </SwiperSlide>
 
               </Swiper>
@@ -86,19 +86,19 @@ export default function Modal() {
                 }}
               >
                 <SwiperSlide>
-                  <img className='slide-bottom' src="../images/detail.png" />
+                  <img className='slide-bottom' s src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='slide-bottom' src="../images/detail.png" />
+                  <img className='slide-bottom' s src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='slide-bottom' src="../images/detail.png" />
+                  <img className='slide-bottom' s src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='slide-bottom' src="../images/detail.png" />
+                  <img className='slide-bottom' s src={images} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='slide-bottom' src="../images/detail.png" />
+                  <img className='slide-bottom' src={images} />
                 </SwiperSlide>
               </Swiper>
 
@@ -109,7 +109,7 @@ export default function Modal() {
           </div>
           <div className="modal-right">
             <span className="price">
-              3.190₼
+              {currentPrice}
             </span>
             <div className='detail-txt'>
               <div className="Specialties">

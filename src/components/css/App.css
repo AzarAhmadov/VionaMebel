@@ -2342,9 +2342,13 @@ aside::after {
   flex-shrink: 0;
 }
 .modalArea .modalFilter .modal-row .modal-left img {
-  height: auto;
+  margin: 0 auto;
   display: block;
-  width: 520px;
+  width: 340px;
+  height: 100%;
+  max-height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .modalArea .modalFilter .modal-row .modal-left .slide-bottom {
   width: 100%;
@@ -2585,7 +2589,7 @@ aside::after {
 }
 @media only screen and (max-width: 992px) {
   .modalArea .modalFilter {
-    padding-top: 370px;
+    padding-top: 420px;
     overflow: auto;
     max-height: 800px;
   }
@@ -2623,8 +2627,7 @@ aside::after {
   }
   .modalArea .modalFilter .modal-row .modal-left img {
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    max-height: 200px;
   }
   .modalArea .modalFilter .modal-row .modal-right {
     padding-top: 20px;
