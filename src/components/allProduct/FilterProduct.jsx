@@ -72,7 +72,7 @@ export default function FilterProduct() {
 
                     </div>
                 </section>
-                <ul className="btn">
+                <ul className="btn-page">
                     {
                         pages.map((el, idx) => {
                             return (

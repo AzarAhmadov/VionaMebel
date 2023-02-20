@@ -1904,7 +1904,7 @@ aside::after {
   color: #FFFFFF;
 }
 
-.btn {
+.btn-page {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -1914,10 +1914,10 @@ aside::after {
   justify-content: center;
   padding-left: 170px;
 }
-.btn li {
+.btn-page li {
   margin-right: 20px;
 }
-.btn li button {
+.btn-page li button {
   border: 1px solid #5AA058;
   border-radius: 10px;
   background: transparent;
@@ -1930,12 +1930,12 @@ aside::after {
   line-height: 21px;
   cursor: pointer;
 }
-.btn li button.active {
+.btn-page li button.active {
   border: none;
   background: #00477F;
   color: #fff;
 }
-.btn li:last-child {
+.btn-page li:last-child {
   margin-right: 0;
 }
 
@@ -2304,7 +2304,7 @@ aside::after {
     width: 100%;
     padding-right: 20px;
   }
-  .btn {
+  .btn-page {
     margin-top: 40px;
     padding: 0;
   }
