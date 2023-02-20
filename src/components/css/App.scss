@@ -2447,8 +2447,11 @@ aside {
           display: flex;
           justify-content: center;
           flex-direction: column;
+          transition: 100ms ease-in;
+          visibility: visible;
 
           &.active {
+            opacity: 0;
             height: 0;
             max-height: 0;
             padding: 0;
@@ -2675,7 +2678,7 @@ aside {
 
       .right-grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2,fit-content);
+        grid-template-rows: repeat(2, fit-content);
       }
 
       .right-top {

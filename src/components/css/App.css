@@ -2101,8 +2101,11 @@ aside::after {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: 100ms ease-in;
+  visibility: visible;
 }
 .filters .left-item .item-row .item-area .checkbox.active {
+  opacity: 0;
   height: 0;
   max-height: 0;
   padding: 0;

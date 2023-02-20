@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-const color = document.querySelectorAll('.color')
-color.forEach((el) => {
-    el.addEventListener('click', () => {
-        document.querySelector('.color.active').classList.remove('active')
-        el.classList.add('active')
+function changeColor() {
+    const color = document.querySelectorAll('.color')
+    color.forEach((el) => {
+        el.addEventListener('click', () => {
+            document.querySelector('.color.active').classList.remove('active')
+            el.classList.add('active')
+        })
     })
-})
+}
+
+function changeSelect() {
+    const itemTop = document.querySelectorAll(".item-top");
+    const checkbox = document.querySelectorAll('.checkbox')
+    itemTop.forEach((el, item) => {
+        el.addEventListener('click', () => {
+            checkbox[item].classList.toggle('active')
+        })
+    })
+}
 
 export default function Filter() {
+    useEffect(() => {
+        changeColor()
+    }, [])
+
+    useEffect(() => {
+        changeSelect()
+    }, [])
     return (
         <div className='filters'>
             <div className="left-item">
