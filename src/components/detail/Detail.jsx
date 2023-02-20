@@ -12,6 +12,7 @@ import Client from './Client';
 export default function Detail() {
     
     window.scrollTo(0, 0);
+
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const overImg = document.querySelectorAll('.over-img')
     overImg.forEach((el) => {

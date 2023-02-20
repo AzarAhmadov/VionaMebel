@@ -1472,8 +1472,10 @@ body {
   border: 1px solid #00477F;
 }
 #detail .container .row .right .btn {
-  display: flex;
+  width: 440px;
   margin-top: 30px;
+  padding-left: 0;
+  margin-left: 0;
 }
 #detail .container .row .right .btn .left {
   width: 200px;
@@ -1902,32 +1904,20 @@ aside::after {
   color: #FFFFFF;
 }
 
-#filter {
-  margin-top: 91px;
+.btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
-  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  justify-content: center;
+  padding-left: 170px;
 }
-#filter .right-item {
-  width: 100%;
-  margin-left: 36px;
-}
-#filter .right-item .right-grid {
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  width: 100%;
-  gap: 40px 0px;
-}
-#filter .right-item .right-grid .btn {
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-#filter .right-item .right-grid .btn li {
+.btn li {
   margin-right: 20px;
 }
-#filter .right-item .right-grid .btn li button {
+.btn li button {
   border: 1px solid #5AA058;
   border-radius: 10px;
   background: transparent;
@@ -1940,15 +1930,34 @@ aside::after {
   line-height: 21px;
   cursor: pointer;
 }
-#filter .right-item .right-grid .btn li button.active {
+.btn li button.active {
   border: none;
   background: #00477F;
   color: #fff;
 }
-#filter .right-item .right-grid .btn li:last-child {
+.btn li:last-child {
   margin-right: 0;
 }
+
+#filter {
+  margin-top: 91px;
+  margin-bottom: 48px;
+  display: flex;
+}
+#filter .right-item {
+  width: 100%;
+  margin-left: 36px;
+}
+#filter .right-item .right-grid {
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 0px;
+}
 #filter .right-item .right-grid div {
+  height: -moz-fit-content;
+  height: fit-content;
   flex-basis: 33.3%;
   display: flex;
   flex-direction: column;
@@ -1961,8 +1970,8 @@ aside::after {
   display: block;
 }
 #filter .right-item .right-grid div img {
-  max-width: 100%;
-  height: 100%;
+  max-width: 230px;
+  height: 180px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2027,15 +2036,16 @@ aside::after {
   background: url(../../../public/images/arrow.png) no-repeat right;
   background-position: center right 15px;
 }
-#filter .left-item {
+
+.filters .left-item {
   width: 223px;
 }
-#filter .left-item .filter-button {
+.filters .left-item .filter-button {
   display: flex;
   justify-content: flex-end;
   margin-top: 25px;
 }
-#filter .left-item .filter-button .delete {
+.filters .left-item .filter-button .delete {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2045,7 +2055,7 @@ aside::after {
   background: transparent;
   border: none;
 }
-#filter .left-item .filter-button .accept {
+.filters .left-item .filter-button .accept {
   background: #00477F;
   width: 108px;
   height: 40px;
@@ -2061,20 +2071,20 @@ aside::after {
   border-radius: 5px;
   margin-left: 39px;
 }
-#filter .left-item .item-row {
+.filters .left-item .item-row {
   display: flex;
   flex-direction: column;
   width: 223px;
 }
-#filter .left-item .item-row .item-area {
+.filters .left-item .item-row .item-area {
   border: 1px solid #EFEFEF;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-#filter .left-item .item-row .item-area:last-child {
+.filters .left-item .item-row .item-area:last-child {
   margin-bottom: 0;
 }
-#filter .left-item .item-row .item-area .item-top {
+.filters .left-item .item-row .item-area .item-top {
   background: #EFEFEF;
   border-radius: 10px;
   height: 45px;
@@ -2084,7 +2094,7 @@ aside::after {
   padding-left: 14px;
   padding-right: 19px;
 }
-#filter .left-item .item-row .item-area .checkbox {
+.filters .left-item .item-row .item-area .checkbox {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -2092,15 +2102,21 @@ aside::after {
   justify-content: center;
   flex-direction: column;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex {
+.filters .left-item .item-row .item-area .checkbox.active {
+  height: 0;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.filters .left-item .item-row .item-area .checkbox .check-flex {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex:last-child {
+.filters .left-item .item-row .item-area .checkbox .check-flex:last-child {
   margin-bottom: 0;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex .color {
+.filters .left-item .item-row .item-area .checkbox .check-flex .color {
   width: 18px;
   height: 18px;
   display: flex;
@@ -2109,38 +2125,41 @@ aside::after {
   border-radius: 50%;
   position: relative;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex .color .active {
-  position: absolute;
-  left: -3.6px;
-  top: -3.4px;
+.filters .left-item .item-row .item-area .checkbox .check-flex .color.active::after {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  left: 0px;
+  top: 0px;
   background: 838383;
   border: 1px solid #838383;
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  content: "";
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex .color.color-black {
+.filters .left-item .item-row .item-area .checkbox .check-flex .color.color-black {
   background: #4B4B4D;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex .color.color-yellow {
+.filters .left-item .item-row .item-area .checkbox .check-flex .color.color-yellow {
   background: #E0C813;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex .color.color-white {
+.filters .left-item .item-row .item-area .checkbox .check-flex .color.color-white {
   background: #DBDBDB;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex .color.color-blue {
+.filters .left-item .item-row .item-area .checkbox .check-flex .color.color-blue {
   background: #066FB1;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex .color.color-red {
+.filters .left-item .item-row .item-area .checkbox .check-flex .color.color-red {
   background: red;
 }
-#filter .left-item .item-row .item-area .checkbox .check-flex p {
+.filters .left-item .item-row .item-area .checkbox .check-flex p {
   margin-left: 10px;
 }
-#filter .left-item .item-row .item-area .checkbox div input {
+.filters .left-item .item-row .item-area .checkbox div input {
   margin-right: 11px;
 }
-#filter .left-item .item-row .item-area .checkbox div .txt {
+.filters .left-item .item-row .item-area .checkbox div .txt {
   width: 180px;
   height: 30px;
   border: 1px solid #BBBBBB;
@@ -2153,10 +2172,10 @@ aside::after {
   color: #828282;
   padding-left: 12px;
 }
-#filter .left-item .item-row .item-area .checkbox div .txt:first-child {
+.filters .left-item .item-row .item-area .checkbox div .txt:first-child {
   margin-bottom: 10px;
 }
-#filter .left-item .item-row .item-area .checkbox div label {
+.filters .left-item .item-row .item-area .checkbox div label {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2233,6 +2252,35 @@ aside::after {
   }
 }
 @media only screen and (max-width: 992px) {
+  .btn {
+    margin-top: 40px;
+    padding: 0;
+  }
+  #filter {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #filter .right-item {
+    margin: 0;
+  }
+  #filter .right-item .right-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fit-content);
+  }
+  #filter .right-item .right-top {
+    margin-top: 50px;
+  }
+  #filter .right-item .right-top form {
+    justify-content: center;
+  }
+  #filter .right-item .right-top form div select {
+    padding-right: 40px;
+  }
+  #filter .right-item .right-grid div {
+    flex-basis: 50%;
+    align-items: center;
+  }
   #about .container .about-row {
     padding: 0 20px;
     flex-direction: column;
@@ -2459,6 +2507,28 @@ aside::after {
   }
 }
 @media only screen and (max-width: 578px) {
+  #filter .right-item .right-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #filter .right-item .right-grid div {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+  #filter .right-item .right-top form {
+    flex-direction: column;
+    align-items: center;
+  }
+  #filter .right-item .right-top form div {
+    margin-bottom: 15px;
+  }
+  #filter .right-item .right-top form div:last-child {
+    margin-bottom: 0;
+  }
+  #filter .right-item .right-top form div select {
+    width: 300px;
+  }
   #about .container .about-row {
     padding: 0;
   }
