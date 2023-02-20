@@ -13,7 +13,6 @@ export default function FilterProduct() {
     const indexOfLastItem = currentPage * perPage
     const indexOfFirstItem = indexOfLastItem - perPage
     const visibleItem = item.slice(indexOfFirstItem, indexOfLastItem)
-    window.scrollTo(0, 0);
     return (
         <main>
             <Container>
