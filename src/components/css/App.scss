@@ -2288,6 +2288,78 @@ aside {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        position: relative;
+
+        &:hover .wiev {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .endirim {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: red;
+          border-radius: 10px;
+          width: 96px;
+          height: 38px;
+          display: grid;
+          place-items: center;
+
+          span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            width: 96px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+          }
+
+        }
+
+        .wiev {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: 35%;
+          left: 40%;
+          transform: translate(-50%, -50%);
+          background: rgba(255, 255, 255, 0.88);
+          border: 1px solid #5AA058;
+          border-radius: 10px;
+          width: 150px;
+          height: 50px;
+          display: grid;
+          place-items: center;
+          transition: 300ms all;
+          cursor: pointer;
+
+          &:hover {
+            background: #5AA058;
+          }
+
+          &:hover p {
+            color: #fff;
+          }
+
+          p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #5AA058;
+
+          }
+        }
 
         div {
           div {
@@ -3091,7 +3163,7 @@ aside {
           img {
             width: 100%;
             max-height: 200px;
-            
+
           }
         }
 

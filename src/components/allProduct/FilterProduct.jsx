@@ -82,6 +82,20 @@ export default function FilterProduct() {
                                                     </div>
                                                 </div> : null
                                             }
+                                            <div className="wiev">
+                                                <p>
+                                                    Ön baxış
+                                                </p>
+                                            </div>
+                                            {
+                                                el.topTxt ? <div className="endirim">
+                                                    <span style={{
+                                                        background: el.mod === 'New' ? '#00477F' : '#5AA058'
+                                                    }}>
+                                                        {el.topTxt}
+                                                    </span>
+                                                </div> : null
+                                            }
                                         </div>
                                     )
                                 })

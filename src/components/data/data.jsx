@@ -6,7 +6,9 @@ export const allProduct = [
         code: "v2ghjkl345",
         oldPrice: "1.800₼ ",
         currentPrice: "1.390₼",
-        category: 'more'
+        category: 'more',
+        mod: "endirim",
+        topTxt: "Endirim "
     },
     {
         images: "https://woodpecker.com.az/upload/resize_cache/iblock/feb/1200_1200_0/c8pepjkhx7uhugnndzdfrnkae2g8m77p.png",
@@ -30,7 +32,7 @@ export const allProduct = [
         code: "v2ghjkl345",
         oldPrice: "1.800₼ ",
         currentPrice: "1.390₼",
-        category: 'more'
+        category: 'more',
     },
     {
         images: "./images/s3.png",
@@ -47,7 +49,9 @@ export const allProduct = [
         code: "v2ghjkl345",
         oldPrice: "3.700₼ ",
         currentPrice: "2.990₼",
-        category: 'more'
+        category: 'more',
+        mod: "endirim",
+        topTxt: "Endirim "
     },
 
     {
@@ -56,7 +60,9 @@ export const allProduct = [
         code: "v2ghjkl345",
         oldPrice: "3.700₼ ",
         currentPrice: "2.990₼",
-        category: 'more'
+        category: 'more',
+        mod: 'New',
+        topTxt: "Yeni"
     },
 
     // Popular Product 
@@ -67,7 +73,9 @@ export const allProduct = [
         code: "v2ghjkl345",
         oldPrice: "3.700₼",
         currentPrice: "2.990₼",
-        category: "newProduct"
+        category: "newProduct",
+        mod: 'New',
+        topTxt: "Yeni "
     },
 
     {
