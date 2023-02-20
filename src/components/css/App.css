@@ -2013,13 +2013,14 @@ aside::after {
   color: #AF1111;
   margin-left: 6px;
 }
-#filter .right-item .right-top form {
+
+.right-top form {
   display: flex;
 }
-#filter .right-item .right-top form div {
+.right-top form div {
   display: flex;
 }
-#filter .right-item .right-top form div select {
+.right-top form div select {
   height: 55px;
   padding-left: 15px;
   padding-right: 55px;
@@ -2035,6 +2036,10 @@ aside::after {
           appearance: none;
   background: url(../../../public/images/arrow.png) no-repeat right;
   background-position: center right 15px;
+}
+
+.form-bottom {
+  display: none;
 }
 
 .filters .left-item {
@@ -2093,6 +2098,12 @@ aside::after {
   align-items: center;
   padding-left: 14px;
   padding-right: 19px;
+}
+.filters .left-item .item-row .item-area .item-top .icon-arrow {
+  transition: 300ms all;
+}
+.filters .left-item .item-row .item-area .item-top .icon-arrow.active {
+  transform: rotate(180deg);
 }
 .filters .left-item .item-row .item-area .checkbox {
   padding-top: 10px;
@@ -2187,7 +2198,26 @@ aside::after {
   color: #303030;
 }
 
+.filter-button-top {
+  width: 100%;
+  margin-bottom: 20px;
+  display: none;
+}
+.filter-button-top button {
+  width: 400px;
+  padding: 10px 0;
+  background: #6b9e5f;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 1200px) {
+  #filter {
+    margin-top: 20px;
+  }
   #header .left {
     display: flex;
     align-items: center;
@@ -2255,12 +2285,60 @@ aside::after {
   }
 }
 @media only screen and (max-width: 992px) {
+  .right-top {
+    display: none;
+  }
+  .form-bottom {
+    display: block;
+  }
+  .form-bottom form {
+    flex-direction: column;
+  }
+  .form-bottom form div {
+    margin-bottom: 10px;
+  }
+  .form-bottom form div:last-child {
+    margin-bottom: 0;
+  }
+  .form-bottom form div select {
+    width: 100%;
+    padding-right: 20px;
+  }
   .btn {
     margin-top: 40px;
     padding: 0;
   }
+  .filter-button-top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .filters {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .filters .item-row {
+    width: 100%;
+  }
+  .filters .left-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 0;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .filters .left-item.active {
+    height: 100%;
+    max-height: 1200px;
+    transition: max-height 1000ms ease-out;
+    overflow-y: hidden;
+  }
   #filter {
-    margin: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -2268,11 +2346,12 @@ aside::after {
     margin: 0;
   }
   #filter .right-item .right-grid {
+    margin-top: 19px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, fit-content);
   }
   #filter .right-item .right-top {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   #filter .right-item .right-top form {
     justify-content: center;
@@ -2510,14 +2589,18 @@ aside::after {
   }
 }
 @media only screen and (max-width: 578px) {
+  .filter-button-top {
+    width: 90%;
+  }
   #filter .right-item .right-grid {
     grid-template-columns: repeat(1, 1fr);
   }
   #filter .right-item .right-grid div {
     margin: 0 auto;
     width: 100%;
-    max-height: 100%;
-    height: auto;
+  }
+  #filter .right-item .right-grid div img {
+    height: 150px;
   }
   #filter .right-item .right-top form {
     flex-direction: column;

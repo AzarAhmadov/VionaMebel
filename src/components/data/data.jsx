@@ -49,7 +49,7 @@ export const allProduct = [
         currentPrice: "2.990₼",
         category: 'more'
     },
-    
+
     {
         images: "./images/s4.png",
         title: "Uşaq otağı",
@@ -69,7 +69,7 @@ export const allProduct = [
         currentPrice: "2.990₼",
         category: "newProduct"
     },
-    
+
     {
         images: './images/pop6.png',
         images_bottom: './images/al1.png',
@@ -224,22 +224,6 @@ export const allProduct = [
         category: "similarProduct"
     },
     {
-        images: './images/pop4.png',
-        title: "Divan",
-        code: "v2ghjkl345",
-        oldPrice: "2.700₼",
-        currentPrice: "2.000₼",
-        category: "similarProduct"
-    },
-    {
-        images: './images/pop4.png',
-        title: "Divan",
-        code: "v2ghjkl345",
-        oldPrice: "2.700₼",
-        currentPrice: "2.000₼",
-        category: "similarProduct"
-    },
-    {
         images: './images/dd2.png',
         title: "Divan",
         code: "v2ghjkl345",
@@ -270,6 +254,22 @@ export const allProduct = [
         code: "v2ghjkl345",
         oldPrice: "3.700₼",
         currentPrice: "2.990₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/pop4.png',
+        title: "Divan",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
+        category: "similarProduct"
+    },
+    {
+        images: './images/pop4.png',
+        title: "Divan",
+        code: "v2ghjkl345",
+        oldPrice: "2.700₼",
+        currentPrice: "2.000₼",
         category: "similarProduct"
     },
     {

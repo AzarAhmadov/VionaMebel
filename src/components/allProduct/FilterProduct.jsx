@@ -16,7 +16,6 @@ export default function FilterProduct() {
     return (
         <main>
             <Container>
-
                 <section id='filter'>
                     <Filter />
                     <div className='right-item'>
@@ -38,15 +37,19 @@ export default function FilterProduct() {
                                     </select>
                                 </div>
                             </form>
+                            {window.scrollTo(0, 0)}
                         </div>
 
                         <div className="right-grid">
                             {
                                 visibleItem.map((el, idx) => {
                                     return (
-                                            <div key={idx}>
-                                                <img src={el.images} alt="" />
-                                                <div className="right-content">
+                                        <div key={idx}>
+                                            {
+                                                el.images ? <img src={el.images} /> : null
+                                            }
+                                            {
+                                                el.images ? <div className="right-content">
                                                     <h5 className='title'>
                                                         {el.title}
                                                     </h5>
@@ -59,12 +62,14 @@ export default function FilterProduct() {
                                                             <span className='current-price'>{el.currentPrice}</span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
+                                                </div> : null
+                                            }
+                                        </div>
                                     )
                                 })
                             }
                         </div>
+
                     </div>
                 </section>
                 <ul className="btn">

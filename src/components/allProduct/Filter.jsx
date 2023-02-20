@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 function changeColor() {
     const color = document.querySelectorAll('.color')
@@ -13,14 +13,22 @@ function changeColor() {
 function changeSelect() {
     const itemTop = document.querySelectorAll(".item-top");
     const checkbox = document.querySelectorAll('.checkbox')
+    const iconArrows = document.querySelectorAll('.icon-arrow')
     itemTop.forEach((el, item) => {
         el.addEventListener('click', () => {
             checkbox[item].classList.toggle('active')
+            iconArrows[item].classList.toggle('active')
         })
     })
 }
 
 export default function Filter() {
+
+    const openItem = useRef()
+
+    const openFilter = () => {
+        openItem.current.classList.toggle('active')
+    }
     useEffect(() => {
         changeColor()
     }, [])
@@ -30,7 +38,10 @@ export default function Filter() {
     }, [])
     return (
         <div className='filters'>
-            <div className="left-item">
+            <div onClick={openFilter} className="filter-button-top">
+                <button> Filtrelə <i class="fa-solid fa-filter"></i> </button>
+            </div>
+            <div ref={openItem} className="left-item">
                 <div className="item-row">
 
                     <div className='item-area'>
@@ -38,7 +49,7 @@ export default function Filter() {
                             <span>
                                 Otaq
                             </span>
-                            <i className="fa-solid fa-chevron-down"></i>
+                            <i className="fa-solid fa-chevron-down icon-arrow"></i>
                         </div>
                         <div className="checkbox">
                             <div>
@@ -61,7 +72,7 @@ export default function Filter() {
                             <span>
                                 Kateqoriya
                             </span>
-                            <i className="fa-solid fa-chevron-down"></i>
+                            <i className="fa-solid fa-chevron-down icon-arrow"></i>
                         </div>
                         <div className="checkbox">
                             <div>
@@ -80,7 +91,7 @@ export default function Filter() {
                             <span>
                                 Qiymət
                             </span>
-                            <i className="fa-solid fa-chevron-down"></i>
+                            <i className="fa-solid fa-chevron-down icon-arrow"></i>
                         </div>
                         <div className="checkbox">
                             <div>
@@ -97,7 +108,7 @@ export default function Filter() {
                             <span>
                                 Ölçü
                             </span>
-                            <i className="fa-solid fa-chevron-down"></i>
+                            <i className="fa-solid fa-chevron-down icon-arrow"></i>
                         </div>
                         <div className="checkbox">
                             <div>
@@ -132,7 +143,7 @@ export default function Filter() {
                             <span>
                                 Qiymət
                             </span>
-                            <i className="fa-solid fa-chevron-down"></i>
+                            <i className="fa-solid fa-chevron-down icon-arrow"></i>
                         </div>
                         <div className="checkbox">
                             <div className='check-flex'>
@@ -172,14 +183,32 @@ export default function Filter() {
                             </div>
                         </div>
                     </div>
-
+                    <div className="right-top form-bottom">
+                            <form action="">
+                                <div>
+                                    <select>
+                                        <option value="q">Qiymətinə görə</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select>
+                                        <option value="p">Populyarlığına görə</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select>
+                                        <option value="y">Yeni Kolleksiya</option>
+                                    </select>
+                                </div>
+                            </form>
+                            {window.scrollTo(0, 0)}
+                        </div>
                 </div>
 
                 <div className="filter-button">
                     <button className='delete'>Sil</button>
                     <button className='accept'>Təsdiqlə</button>
                 </div>
-
             </div>
         </div>
     )

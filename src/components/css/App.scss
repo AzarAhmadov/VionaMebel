@@ -2347,34 +2347,38 @@ aside {
         }
       }
     }
+  }
+}
 
-    .right-top {
-      form {
-        display: flex;
+.right-top {
+  form {
+    display: flex;
 
-        div {
-          display: flex;
+    div {
+      display: flex;
 
-          select {
-            height: 55px;
-            padding-left: 15px;
-            padding-right: 55px;
-            border: 1px solid #EFEFEF;
-            font-family: 'Poppins',
-              sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #303030;
-            appearance: none;
-            background: url(../../../public/images/arrow.png) no-repeat right;
-            background-position: center right 15px;
-          }
-        }
+      select {
+        height: 55px;
+        padding-left: 15px;
+        padding-right: 55px;
+        border: 1px solid #EFEFEF;
+        font-family: 'Poppins',
+          sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #303030;
+        appearance: none;
+        background: url(../../../public/images/arrow.png) no-repeat right;
+        background-position: center right 15px;
       }
     }
   }
+}
+
+.form-bottom {
+  display: none;
 }
 
 .filters {
@@ -2438,6 +2442,14 @@ aside {
           align-items: center;
           padding-left: 14px;
           padding-right: 19px;
+
+          .icon-arrow {
+            transition: 300ms all;
+
+            &.active {
+              transform: rotate(180deg);
+            }
+          }
         }
 
         .checkbox {
@@ -2557,9 +2569,30 @@ aside {
   }
 }
 
+.filter-button-top {
+  width: 100%;
+  margin-bottom: 20px;
+  display: none;
+
+  button {
+    width: 400px;
+    padding: 10px 0;
+    background: #6b9e5f;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
 // Responsive
 
 @media only screen and (max-width:1200px) {
+  #filter {
+    margin-top: 20px;
+  }
+
   #header {
     .left {
       display: flex;
@@ -2663,13 +2696,72 @@ aside {
 }
 
 @media only screen and (max-width:992px) {
+  .right-top {
+    display: none;
+  }
+
+  .form-bottom {
+    display: block;
+
+    form {
+      flex-direction: column;
+
+      div {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        select {
+          width: 100%;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
   .btn {
     margin-top: 40px;
     padding: 0;
   }
 
+  .filter-button-top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .filters {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .item-row {
+      width: 100%;
+    }
+
+    .left-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+      height: 0;
+      overflow: hidden;
+      max-height: 0;
+
+      &.active {
+        height: 100%;
+        max-height: 1200px;
+        transition: max-height 1000ms ease-out;
+        overflow-y: hidden;
+      }
+    }
+  }
+
   #filter {
-    margin: 0;
     flex-direction: column;
     align-items: center;
 
@@ -2677,12 +2769,13 @@ aside {
       margin: 0;
 
       .right-grid {
+        margin-top: 19px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, fit-content);
       }
 
       .right-top {
-        margin-top: 50px;
+        margin-top: 0px;
 
         form {
           justify-content: center;
@@ -3020,6 +3113,10 @@ aside {
 }
 
 @media only screen and (max-width:578px) {
+  .filter-button-top {
+    width: 90%;
+  }
+
   #filter {
     .right-item {
       .right-grid {
@@ -3028,8 +3125,10 @@ aside {
         div {
           margin: 0 auto;
           width: 100%;
-          max-height: 100%;
-          height: auto;
+
+          img {
+            height: 150px;
+          }
         }
       }
 
