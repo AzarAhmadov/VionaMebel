@@ -24,7 +24,9 @@ export const allProduct = [
         code: "v2ghjkl345",
         oldPrice: "3.700₼ ",
         currentPrice: "2.990₼",
-        category: 'more'
+        category: 'more',
+        mod: 'New',
+        topTxt: "Yeni"
     },
     {
         images: "https://woodpecker.com.az/upload/resize_cache/iblock/468/1200_1200_0/hsyp3j6pcfucdr8fpaba3rdjnrrp9w1h.png",
@@ -41,7 +43,9 @@ export const allProduct = [
         oldPrice: "3.700₼ ",
         currentPrice: "2.990₼",
         category: 'products',
-        category: 'more'
+        category: 'more',
+        mod: "endirim",
+        topTxt: "Endirim "
     },
     {
         images: "https://pngimg.com/uploads/armchair/armchair_PNG7026.png",
@@ -50,8 +54,6 @@ export const allProduct = [
         oldPrice: "3.700₼ ",
         currentPrice: "2.990₼",
         category: 'more',
-        mod: "endirim",
-        topTxt: "Endirim "
     },
 
     {

@@ -1719,7 +1719,7 @@ aside .close i {
   font-size: 20px;
 }
 aside img {
-  height: 255px;
+  max-height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -2804,6 +2804,19 @@ aside::after {
     margin-top: 19px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, fit-content);
+    place-items: center;
+  }
+  #filter .right-item .right-grid .wiev {
+    left: 50% !important;
+    width: 70% !important;
+  }
+  #filter .right-item .right-grid div {
+    margin: 0 auto;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+  #filter .right-item .right-grid div .code {
+    margin: 5px auto !important;
   }
   #filter .right-item .right-top {
     margin-top: 0px;
@@ -2813,10 +2826,6 @@ aside::after {
   }
   #filter .right-item .right-top form div select {
     padding-right: 40px;
-  }
-  #filter .right-item .right-grid div {
-    flex-basis: 50%;
-    align-items: center;
   }
   #about .container .about-row {
     padding: 0 20px;

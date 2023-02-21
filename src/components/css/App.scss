@@ -2024,7 +2024,7 @@ aside {
   }
 
   img {
-    height: 255px;
+    max-height: 300px;
     object-fit: contain;
     width: 100%;
   }
@@ -3306,6 +3306,22 @@ aside {
         margin-top: 19px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, fit-content);
+        place-items: center;
+
+        .wiev {
+          left: 50% !important;
+          width: 70% !important;
+
+        }
+
+        div {
+          margin: 0 auto;
+          width: max-content !important;
+
+          .code {
+            margin: 5px auto !important;
+          }
+        }
       }
 
       .right-top {
@@ -3319,13 +3335,6 @@ aside {
               padding-right: 40px;
             }
           }
-        }
-      }
-
-      .right-grid {
-        div {
-          flex-basis: 50%;
-          align-items: center;
         }
       }
     }
