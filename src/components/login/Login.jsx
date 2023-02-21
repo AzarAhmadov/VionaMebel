@@ -1,6 +1,7 @@
 import React from 'react'
 import BannerGlobal from '../BannerGlobal'
 import Container from '../home/Container'
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
@@ -58,7 +59,7 @@ export default function Login() {
                                         <a className='form-link active' href="#">Giriş</a>
                                     </li>
                                     <li>
-                                        <a className='form-link ' href="#">Qeydiyyat </a>
+                                        <Link className='form-link ' to="/qeydiyyat">Qeydiyyat </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -84,7 +85,7 @@ export default function Login() {
                                 spaceBetween={30}
                                 modules={[Navigation, Mousewheel, Keyboard]}
                                 className="mySwiper">
-                       
+
                                 <SwiperSlide className='slide-dif'>
                                     <div className="product-about">
                                         <div className="product-left">
@@ -131,7 +132,7 @@ export default function Login() {
                                             </div>
                                         </div>
                                     </div>
-                                    <img  src="../images/sl1.png" alt="" />
+                                    <img src="../images/sl1.png" alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide className='slide-dif'>
                                     <div className="product-about">
@@ -179,7 +180,7 @@ export default function Login() {
                                             </div>
                                         </div>
                                     </div>
-                                    <img  src="../images/sl1.png" alt="" />
+                                    <img src="../images/sl1.png" alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide className='slide'>
                                     <div className="product-about">
@@ -232,6 +233,7 @@ export default function Login() {
                             </Swiper>
                         </div>
                     </div>
+
                 </Container>
             </section>
         </main>

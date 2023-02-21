@@ -2871,6 +2871,30 @@ aside {
   }
 }
 
+.login-area {
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+
+    li {
+      a {
+        margin-right: 62px;
+        font-family: 'Poppins';
+        font-size: 18px;
+        line-height: 27px;
+        color: #666767;
+
+        &.active {
+          font-weight: 600;
+          text-decoration-line: underline;
+          color: #313233;
+        }
+      }
+    }
+  }
+}
+
 #login {
   margin-bottom: 60px;
 
@@ -2883,29 +2907,6 @@ aside {
     justify-content: space-between;
 
     .login-left {
-      .login-area {
-        margin-bottom: 20px;
-
-        ul {
-          display: flex;
-
-          li {
-            a {
-              margin-right: 62px;
-              font-family: 'Poppins';
-              font-size: 18px;
-              line-height: 27px;
-              color: #666767;
-
-              &.active {
-                font-weight: 600;
-                text-decoration-line: underline;
-                color: #313233;
-              }
-            }
-          }
-        }
-      }
 
       .inputs {
         form {
@@ -3006,6 +3007,109 @@ aside {
     }
   }
 
+}
+
+#register {
+  margin-bottom: 30px;
+
+  .top-title {
+    margin-bottom: 48px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      form {
+        width: 520px;
+
+        div {
+          display: flex;
+          flex-direction: column;
+
+          &.check {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            place-items: center;
+            margin-bottom: 52px;
+
+            input {
+              border-radius: 10px;
+              width: 30px;
+              height: 30px;
+              margin-right: 10px;
+            }
+
+            p {
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              color: #000000;
+            }
+
+          }
+
+          &.btn-form {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            button {
+              background: #00477F;
+              border-radius: 10px;
+              width: 261px;
+              height: 60px;
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 27px;
+              color: #FFFFFF;
+              border: none;
+            }
+          }
+
+          span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #303030;
+            margin-bottom: 11px;
+            margin-top: 25px;
+          }
+
+          input {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #6F6F6F;
+            padding-left: 11px;
+            height: 54px;
+            background: #F4F4F4;
+            border: none;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .right {
+      margin-top: -100px;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 .modalArea {
@@ -3481,6 +3585,23 @@ aside {
 }
 
 @media only screen and (max-width:992px) {
+  #register {
+    .row {
+      flex-direction: column;
+      align-items: center;
+
+      form {
+        .btn-form{
+          align-items: center !important;
+        }
+      }
+
+      .right {
+        display: none;
+      }
+    }
+  }
+
   #login {
     .swiper-button-next {
       top: 50% !important;
@@ -4110,6 +4231,26 @@ aside {
 }
 
 @media only screen and (max-width:578px) {
+  #register {
+    .row {
+      .left {
+        width: 100%;
+
+        form {
+          width: 100%;
+
+          div {
+            width: 100%;
+
+            p {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .modalArea {
     .modalFilter {
       .modal-row {

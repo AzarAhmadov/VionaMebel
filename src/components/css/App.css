@@ -2456,6 +2456,25 @@ aside::after {
   border-radius: 5px;
 }
 
+.login-area {
+  margin-bottom: 20px;
+}
+.login-area ul {
+  display: flex;
+}
+.login-area ul li a {
+  margin-right: 62px;
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 27px;
+  color: #666767;
+}
+.login-area ul li a.active {
+  font-weight: 600;
+  text-decoration-line: underline;
+  color: #313233;
+}
+
 #login {
   margin-bottom: 60px;
 }
@@ -2465,24 +2484,6 @@ aside::after {
 #login .row {
   display: flex;
   justify-content: space-between;
-}
-#login .row .login-left .login-area {
-  margin-bottom: 20px;
-}
-#login .row .login-left .login-area ul {
-  display: flex;
-}
-#login .row .login-left .login-area ul li a {
-  margin-right: 62px;
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 27px;
-  color: #666767;
-}
-#login .row .login-left .login-area ul li a.active {
-  font-weight: 600;
-  text-decoration-line: underline;
-  color: #313233;
 }
 #login .row .login-left .inputs form {
   width: 520px;
@@ -2566,6 +2567,94 @@ aside::after {
 }
 #login .row .right-item .slide-dif .product-about .product-time .btn {
   margin-top: 30px;
+}
+
+#register {
+  margin-bottom: 30px;
+}
+#register .top-title {
+  margin-bottom: 48px;
+}
+#register .row {
+  display: flex;
+  justify-content: space-between;
+}
+#register .row .left form {
+  width: 520px;
+}
+#register .row .left form div {
+  display: flex;
+  flex-direction: column;
+}
+#register .row .left form div.check {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  place-items: center;
+  margin-bottom: 52px;
+}
+#register .row .left form div.check input {
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+#register .row .left form div.check p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+#register .row .left form div.btn-form {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+#register .row .left form div.btn-form button {
+  background: #00477F;
+  border-radius: 10px;
+  width: 261px;
+  height: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  border: none;
+}
+#register .row .left form div span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+  margin-bottom: 11px;
+  margin-top: 25px;
+}
+#register .row .left form div input {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6F6F6F;
+  padding-left: 11px;
+  height: 54px;
+  background: #F4F4F4;
+  border: none;
+  border-radius: 10px;
+}
+#register .row .right {
+  margin-top: -100px;
+}
+#register .row .right img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .modalArea {
@@ -2950,6 +3039,16 @@ aside::after {
   }
 }
 @media only screen and (max-width: 992px) {
+  #register .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #register .row form .btn-form {
+    align-items: center !important;
+  }
+  #register .row .right {
+    display: none;
+  }
   #login .swiper-button-next {
     top: 50% !important;
     transform: translateY(-50%) !important;
@@ -3418,6 +3517,18 @@ aside::after {
   }
 }
 @media only screen and (max-width: 578px) {
+  #register .row .left {
+    width: 100%;
+  }
+  #register .row .left form {
+    width: 100%;
+  }
+  #register .row .left form div {
+    width: 100%;
+  }
+  #register .row .left form div p {
+    width: 300px;
+  }
   .modalArea .modalFilter .modal-row {
     padding-top: 10px;
     padding-bottom: 0px;

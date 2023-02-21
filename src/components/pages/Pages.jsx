@@ -7,6 +7,7 @@ import Header from '../common/Header';
 import Detail from '../detail/Detail';
 import Home from '../home/Home';
 import Login from '../login/Login';
+import Register from '../login/Register';
 import ShoppingCentre from '../shopping/ShoppingCentre';
 export default function Pages() {
     return (
@@ -20,6 +21,7 @@ export default function Pages() {
                     <Route path='/haqqımızda' element={<About />} />
                     <Route path='/mehsullar' element={<FilterProduct />} />
                     <Route path='/giris' element={<Login />} />
+                    <Route path='/qeydiyyat' element={<Register />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
