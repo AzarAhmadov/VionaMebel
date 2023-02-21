@@ -54,7 +54,9 @@ export default function Header() {
                             </Link>
                         </div>
                         <div className="bar">
-                            <i className="fa-solid fa-bars-staggered"></i>
+                            <Link to='/giris'> <i style={{ fontSize: '37px', color: "#00477F" }} className="fa-regular fa-circle-user"></i></Link>
+                            <i style={{ fontSize: "35px", color: "#00477F", margin:'0 20px' }} class="fa-solid fa-magnifying-glass"></i>
+                            <i style={{ fontSize: "35px", color: "#00477F" }} className="fa-solid fa-bars-staggered"></i>
                         </div>
                     </div>
                     <div className="averege-item">
