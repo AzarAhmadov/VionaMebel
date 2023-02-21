@@ -2042,8 +2042,8 @@ aside::after {
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 21px;
   line-height: 27px;
   color: #000000;
 }
@@ -2051,7 +2051,7 @@ aside::after {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 18px;
   color: #6C6C6C;
   margin: 5px 0;
@@ -2062,7 +2062,7 @@ aside::after {
 }
 #filter .right-item .right-grid div .right-content .price .old-price {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
   text-decoration-line: line-through;
   color: #00477F;
@@ -2070,8 +2070,8 @@ aside::after {
 #filter .right-item .right-grid div .right-content .price .current-price {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 17px;
   line-height: 24px;
   color: #AF1111;
   margin-left: 6px;
@@ -2324,12 +2324,14 @@ aside::after {
 }
 .modalArea .modalFilter .modal-row .modal-left {
   width: 500px;
-  padding-top: 56px;
+  padding: 49px 0;
+  margin: auto 0;
   position: relative;
 }
 .modalArea .modalFilter .modal-row .modal-left .close {
   position: absolute;
-  left: -30px;
+  top: 20px;
+  left: -20px;
 }
 .modalArea .modalFilter .modal-row .modal-left .modal-top {
   margin-bottom: 20px;
@@ -2652,24 +2654,26 @@ aside::after {
 }
 @media only screen and (max-width: 992px) {
   .modalArea .modalFilter {
-    padding-top: 420px;
+    padding-top: 50px;
     overflow: auto;
     max-height: 800px;
-  }
-  .modalArea .modalFilter a {
-    margin-left: 0 !important;
+    display: grid;
+    place-items: center;
   }
   .modalArea .modalFilter .modal-row {
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
   .modalArea .modalFilter .modal-row .modal-left {
+    padding: 0;
     width: 360px !important;
     width: 375px;
   }
   .modalArea .modalFilter .modal-row .modal-left .close {
     position: absolute;
-    top: 0px;
+    top: -46px;
     left: 0;
   }
   .modalArea .modalFilter .modal-row .modal-left .swiper-button-prev::after,
@@ -2817,6 +2821,9 @@ aside::after {
   }
   #filter .right-item .right-grid div .code {
     margin: 5px auto !important;
+  }
+  #filter .right-item .right-grid div .title {
+    margin: 0 auto;
   }
   #filter .right-item .right-top {
     margin-top: 0px;
@@ -3053,6 +3060,10 @@ aside::after {
   }
 }
 @media only screen and (max-width: 578px) {
+  .modalArea .modalFilter .modal-row {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
   .filter-button-top {
     width: 90%;
   }
@@ -3332,9 +3343,11 @@ aside::after {
 }
 @media only screen and (max-width: 375px) {
   .modalArea .modalFilter {
-    padding-top: 570px;
     max-height: 600px;
     overflow: auto;
+  }
+  .modalArea .modalFilter .close {
+    top: -50px !important;
   }
   aside {
     background: #fff;

@@ -2379,8 +2379,8 @@ aside {
             margin-top: 10px;
             font-family: 'Poppins', sans-serif;
             font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
+            font-weight: 600;
+            font-size: 21px;
             line-height: 27px;
             color: #000000;
           }
@@ -2389,7 +2389,7 @@ aside {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 300;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 18px;
             color: #6C6C6C;
             margin: 5px 0;
@@ -2401,7 +2401,7 @@ aside {
 
             .old-price {
               font-weight: 400;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 21px;
               text-decoration-line: line-through;
               color: #00477F;
@@ -2410,8 +2410,8 @@ aside {
             .current-price {
               font-family: 'Poppins';
               font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
+              font-weight: 600;
+              font-size: 17px;
               line-height: 24px;
               color: #AF1111;
               margin-left: 6px;
@@ -2709,12 +2709,14 @@ aside {
 
       .modal-left {
         width: 500px;
-        padding-top: 56px;
+        padding: 49px 0;
+        margin: auto 0;
         position: relative;
 
         .close {
           position: absolute;
-          left: -30px;
+          top: 20px;
+          left: -20px;
         }
 
         .modal-top {
@@ -3117,24 +3119,26 @@ aside {
 @media only screen and (max-width:992px) {
   .modalArea {
     .modalFilter {
-      padding-top: 420px;
+      padding-top: 50px;
       overflow: auto;
       max-height: 800px;
+      display: grid;
+      place-items: center;
 
-      a {
-        margin-left: 0 !important;
-      }
 
       .modal-row {
         flex-direction: column;
         align-items: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
 
         .modal-left {
+          padding: 0;
           width: 360px !important;
 
           .close {
             position: absolute;
-            top: 0px;
+            top: -46px;
             left: 0;
 
           }
@@ -3320,6 +3324,10 @@ aside {
 
           .code {
             margin: 5px auto !important;
+          }
+
+          .title {
+            margin: 0 auto;
           }
         }
       }
@@ -3656,6 +3664,15 @@ aside {
 }
 
 @media only screen and (max-width:578px) {
+  .modalArea {
+    .modalFilter {
+      .modal-row {
+        padding-top: 10px;
+        padding-bottom: 0px;
+      }
+    }
+  }
+
   .filter-button-top {
     width: 90%;
   }
@@ -4081,9 +4098,12 @@ aside {
 @media only screen and (max-width:375px) {
   .modalArea {
     .modalFilter {
-      padding-top: 570px;
       max-height: 600px;
       overflow: auto;
+
+      .close {
+        top: -50px !important;
+      }
     }
   }
 
