@@ -2970,7 +2970,7 @@ aside {
 
         img {
           padding-left: 15px;
-          margin-top: 15px;
+          margin-top: 8px;
           object-fit: contain !important;
           width: 320px !important;
           height: 410px;
@@ -3482,6 +3482,16 @@ aside {
 
 @media only screen and (max-width:992px) {
   #login {
+    .swiper-button-next {
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+    }
+
+    .swiper-button-prev {
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+    }
+
     .row {
       flex-direction: column;
       align-items: center;
@@ -3496,7 +3506,7 @@ aside {
         align-items: center;
         justify-content: center;
 
-        .swiper-wrapper{
+        .swiper-wrapper {
           display: flex;
           align-items: center;
         }
@@ -3504,6 +3514,10 @@ aside {
         .slide-dif {
           flex-direction: column;
           height: fit-content;
+
+          img {
+            margin-top: 20px;
+          }
 
         }
 

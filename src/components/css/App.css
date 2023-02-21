@@ -2540,7 +2540,7 @@ aside::after {
 }
 #login .row .right-item .slide-dif img {
   padding-left: 15px;
-  margin-top: 15px;
+  margin-top: 8px;
   -o-object-fit: contain !important;
      object-fit: contain !important;
   width: 320px !important;
@@ -2950,6 +2950,14 @@ aside::after {
   }
 }
 @media only screen and (max-width: 992px) {
+  #login .swiper-button-next {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+  #login .swiper-button-prev {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
   #login .row {
     flex-direction: column;
     align-items: center;
@@ -2972,6 +2980,9 @@ aside::after {
     flex-direction: column;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  #login .row .right-item .slide-dif img {
+    margin-top: 20px;
   }
   #login .row .right-item img {
     display: flex;
