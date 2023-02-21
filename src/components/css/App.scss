@@ -111,7 +111,7 @@ body {
 
     li {
       &.link {
-        margin-bottom:20px;
+        margin-bottom: 20px;
 
         &:last-child {
           margin-bottom: 0;
@@ -4398,6 +4398,9 @@ aside {
 
   .modalArea {
     .modalFilter {
+      margin-top: 47px;
+      max-height: 760px;
+
       .modal-row {
         padding-top: 10px;
         padding-bottom: 0px;
@@ -4851,8 +4854,9 @@ aside {
 
 @media only screen and (max-width:375px) {
   .modalArea {
+    padding-top: 10px;
     .modalFilter {
-      max-height: 600px;
+      max-height: 575px;
       overflow: auto;
 
       .close {

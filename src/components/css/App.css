@@ -3659,6 +3659,10 @@ aside::after {
   #register .row .left form div p {
     width: 300px;
   }
+  .modalArea .modalFilter {
+    margin-top: 47px;
+    max-height: 760px;
+  }
   .modalArea .modalFilter .modal-row {
     padding-top: 10px;
     padding-bottom: 0px;
@@ -3960,8 +3964,11 @@ aside::after {
   }
 }
 @media only screen and (max-width: 375px) {
+  .modalArea {
+    padding-top: 10px;
+  }
   .modalArea .modalFilter {
-    max-height: 600px;
+    max-height: 575px;
     overflow: auto;
   }
   .modalArea .modalFilter .close {
