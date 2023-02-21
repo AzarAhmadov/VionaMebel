@@ -11,7 +11,7 @@ export default function Footer() {
                     </li>
                     <li className='top'>
                         <li><Link to="/haqqımızda"> Haqqımızda </Link></li>
-                        <li><a href="#"> Məhsullar </a></li>
+                        <li><Link to="/mehsullar"> Məhsullar </Link></li>
                         <li><Link to="/magazalar"> Mağazalarımız </Link></li>
                         <li><a href="#"> Əlaqə </a></li>
                     </li>

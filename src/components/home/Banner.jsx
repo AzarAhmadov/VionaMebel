@@ -40,7 +40,7 @@ export default function Banner() {
     }, 1000);
 
     return (
-        <section id='banner'>
+        <section className='global-sl' id='banner'>
             <Container>
                 <div className="row">
                     <div className="left-item">

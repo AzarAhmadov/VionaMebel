@@ -51,7 +51,7 @@ export default function PopularProduct() {
                                 el.category === 'newProduct' ?
                                     <SwiperSlide key={idx} className='swiper-slider'>
                                         <div className="slide-item">
-                                            <img src={el.images} alt="" />
+                                            <img className='main-img' src={el.images} alt="" />
                                             <div className="img-bottom">
                                                 <ul>
                                                     <li><img src={el.images_bottom} alt="" /></li>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
@@ -70,12 +71,12 @@ export default function Header() {
                             </a>
                         </div>
                         <div className="links">
-                            <a className='bg-dark' href="#">
+                            <Link className='bg-dark' to="/giris">
                                 <i className="fa-regular fa-circle-user"></i>
                                 <span>
                                     Giriş
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="links">
                             <a className='bg-dark' href="#">
