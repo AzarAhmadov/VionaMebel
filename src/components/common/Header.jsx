@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
     const mobil = useRef()
+    const bar = useRef()
     const openMenu = () => {
         mobil.current.classList.toggle('active')
+        bar.current.classList.toggle('fa-xmark')
     }
     function getModal() {
         const link = document.querySelectorAll('.link')
         link.forEach((el) => {
             el.addEventListener('click', () => {
                 mobil.current.classList.remove('active')
+                bar.current.classList.remove('fa-xmark')
             })
         })
     }
@@ -67,9 +70,9 @@ export default function Header() {
                             </Link>
                         </div>
                         <div className="bar">
-                            <Link to='/giris'> <i style={{ fontSize: '37px', color: "#00477F" }} className="fa-regular fa-circle-user"></i></Link>
-                            <i style={{ fontSize: "35px", color: "#00477F", margin: '0 20px' }} class="fa-solid fa-magnifying-glass"></i>
-                            <i onClick={openMenu} style={{ fontSize: "35px", color: "#00477F" }} className="fa-solid fa-bars-staggered"></i>
+                            <Link to='/giris'> <i style={{ fontSize: '35px', color: "#00477F", width: "32px" }} className="fa-regular fa-circle-user"></i></Link>
+                            <i style={{ fontSize: "32px", color: "#00477F", margin: '0 20px', width: "32px" }} class="fa-solid fa-magnifying-glass"></i>
+                            <i ref={bar} onClick={openMenu} style={{ fontSize: "32px", color: "#00477F", width: "32px" }} className="fa-solid fa-bars-staggered"></i>
                         </div>
                     </div>
                     <div className="averege-item">
