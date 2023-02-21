@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaAngleUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
     const [showTopBtn, setShowTopBtn] = useState(false);
@@ -22,10 +21,7 @@ const ScrollToTop = () => {
         <div className="top-to-btm">
             {" "}
             {showTopBtn && (
-                <FaAngleUp
-                    className="icon-position icon-style"
-                    onClick={goToTop}
-                />
+                <i onClick={goToTop} className=" fa-solid fa-angle-up icon-position icon-style"></i>
             )}{" "}
         </div>
     );
