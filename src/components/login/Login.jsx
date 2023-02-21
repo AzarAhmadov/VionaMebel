@@ -56,7 +56,7 @@ export default function Login() {
                             <div className="login-area">
                                 <ul>
                                     <li>
-                                        <a className='form-link active' href="#">Giriş</a>
+                                        <Link to='/giris' className='form-link active'>Giriş</Link>
                                     </li>
                                     <li>
                                         <Link className='form-link ' to="/qeydiyyat">Qeydiyyat </Link>
