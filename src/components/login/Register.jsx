@@ -79,6 +79,7 @@ export default function Register() {
                                 </div>
                             </form>
                         </div>
+                        
                         <div className="right">
                             <img src="../images/logo-viona 3.png" alt="" />
                         </div>

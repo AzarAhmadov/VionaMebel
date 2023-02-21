@@ -9,7 +9,7 @@ import Detail from '../detail/Detail';
 import Home from '../home/Home';
 import Login from '../login/Login';
 import Register from '../login/Register';
-import ScroolTop from '../scroolTop/ScroolTop';
+import ScroolTop from '../common/ScroolTop';
 import ShoppingCentre from '../shopping/ShoppingCentre';
 export default function Pages() {
     return (
