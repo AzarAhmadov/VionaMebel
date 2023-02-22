@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Basket from '../ basket/Basket';
+import Basket from '../basket/Basket';
 import About from '../about/About';
 import FilterProduct from '../allProduct/FilterProduct';
 import Footer from '../common/Footer';
@@ -11,7 +11,8 @@ import Login from '../login/Login';
 import Register from '../login/Register';
 import ScroolTop from '../common/ScroolTop';
 import ShoppingCentre from '../shopping/ShoppingCentre';
-import BasketTotal from '../ basket/BasketTotal';
+import BasketTotal from '../basket/BasketTotal';
+import Contact from '../contact/Contact';
 export default function Pages() {
     return (
         <>
@@ -29,6 +30,7 @@ export default function Pages() {
                     <Route path='/qeydiyyat' element={<Register />} />
                     <Route path='/sebet' element={<Basket />} />
                     <Route path='/sebet-total' element={<BasketTotal />} />
+                    <Route path='/elaqe' element={<Contact />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

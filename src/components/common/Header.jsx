@@ -4,9 +4,12 @@ import { BsCart } from "react-icons/bs";
 export default function Header() {
     const mobil = useRef()
     const bar = useRef()
+    const search = useRef()
+
     const openMenu = () => {
         mobil.current.classList.toggle('active')
         bar.current.classList.toggle('fa-xmark')
+        search.current.classList.remove('active')
     }
     function getModal() {
         const link = document.querySelectorAll('.link')
@@ -18,6 +21,10 @@ export default function Header() {
         })
     }
     useEffect(() => { getModal() })
+
+    const getSearch = () => {
+        search.current.classList.toggle('active')
+    }
     return (
         <header id='header'>
             <div className="container">
@@ -71,8 +78,8 @@ export default function Header() {
                         </div>
                         <div className="bar">
                             <Link to='/giris'> <i style={{ fontSize: '35px', color: "#00477F", width: "32px" }} className="fa-regular fa-circle-user"></i></Link>
-                            <Link to="/sebet"><BsCart style={{color: "#00477F", margin: '0 15px', width: "40px", height:"35px" }}/></Link>
-                            <i style={{ fontSize: "32px", color: "#00477F", width: "48px" }} class="fa-solid fa-magnifying-glass"></i>
+                            <Link to="/sebet"><BsCart style={{ color: "#00477F", margin: '0 15px', width: "40px", height: "35px" }} /></Link>
+                            <i onClick={getSearch} style={{ fontSize: "32px", color: "#00477F", width: "48px" }} class="fa-solid fa-magnifying-glass"></i>
                             <i ref={bar} onClick={openMenu} style={{ fontSize: "32px", color: "#00477F", width: "32px" }} className="fa-solid fa-bars-staggered"></i>
                         </div>
                     </div>
@@ -225,6 +232,12 @@ export default function Header() {
                     </nav>
                 </div>
             </div>
+
+            <div ref={search} className="search">
+                <input placeholder='Axtarış...' type="text" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
             <div ref={mobil} className='mobil'>
                 <ul>
                     <li className='link'>
@@ -338,7 +351,7 @@ export default function Header() {
                         <Link to="/magazalar">Mağazalarımız</Link>
                     </li>
                     <li className='link'>
-                        <Link to="">Əlaqə</Link>
+                        <Link to="/elaqe">Əlaqə</Link>
                     </li>
                     <li className='link'>
                         <Link to="">Şikayət və təkliflər</Link>

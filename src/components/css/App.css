@@ -36,6 +36,10 @@
   font-size: 30px;
 }
 
+.search {
+  display: none;
+}
+
 @keyframes movebtn {
   0% {
     transform: translateY(0px);
@@ -3590,6 +3594,177 @@ aside::after {
   margin-top: 10px;
 }
 
+#contact {
+  margin-bottom: 90px;
+}
+#contact .container .row {
+  margin-top: 48px;
+}
+#contact .container .row .form {
+  margin-top: 60px;
+}
+#contact .container .row .form form {
+  width: 948px;
+  margin-top: 48px;
+}
+#contact .container .row .form form .contact-btn {
+  margin-top: 31px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#contact .container .row .form form .contact-btn button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  width: 319px;
+  height: 54px;
+  background: #00477F;
+}
+#contact .container .row .form form div {
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .row .form form div span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+  margin-bottom: 11px;
+  margin-top: 25px;
+}
+#contact .container .row .form form div textarea {
+  padding-top: 18px;
+  padding-left: 12px;
+  background: #F2F2F2;
+  border-radius: 10px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6F6F6F;
+  padding-left: 11px;
+  resize: none;
+  height: 164px;
+}
+#contact .container .row .form form .form-flex {
+  grid-gap: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+}
+#contact .container .row .form form .form-flex span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+  margin-bottom: 11px;
+  margin-top: 25px;
+}
+#contact .container .row .form form .form-flex input {
+  background: #F2F2F2;
+  width: 459px;
+  height: 54px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6F6F6F;
+  padding-left: 11px;
+}
+#contact .container .row .form form .form-flex div {
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .row .contact-top {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F9F8F8;
+  height: 70px;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 28px;
+}
+#contact .container .row .contact-top i {
+  font-size: 30px;
+  color: #00477F;
+  transition: 300ms all;
+}
+#contact .container .row .contact-top i.active {
+  transform: rotate(180deg);
+}
+#contact .container .row .contact-top span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#contact .container .row .filial {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(223, 224, 223, 0.22);
+}
+#contact .container .row .filial.active {
+  display: none;
+}
+#contact .container .row .filial .left {
+  padding-top: 32px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .row .filial .left .f-flex {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+}
+#contact .container .row .filial .left .f-flex span {
+  margin-right: 15px;
+}
+#contact .container .row .filial .left .f-flex p {
+  margin-bottom: 12px;
+}
+#contact .container .row .filial .left .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+#contact .container .row .filial .left a {
+  margin-top: 10px;
+  margin-bottom: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration-line: underline;
+  color: #4A4A4A;
+}
+#contact .container .row .filial .right {
+  width: 615px;
+}
+
 @media only screen and (max-width: 1200px) {
   #basketTotal .basket-top {
     display: none;
@@ -3690,6 +3865,67 @@ aside::after {
   }
 }
 @media only screen and (max-width: 992px) {
+  .search {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 90px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 500ms all;
+  }
+  .search.active {
+    top: 95px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .search i {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 25px;
+    color: rgb(0, 71, 127);
+  }
+  .search input {
+    width: 93%;
+    border-radius: 10px;
+    border: none;
+    height: 55px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    background: #F2F2F2;
+  }
+  #contact {
+    margin-bottom: 70px;
+  }
+  #contact .container .row .form {
+    width: 100%;
+  }
+  #contact .container .row .form form {
+    width: 100%;
+  }
+  #contact .container .row .form form .form-flex {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #contact .container .row .form form .form-flex input {
+    width: 100%;
+  }
+  #contact .container .row .contact-btn {
+    align-items: center !important;
+  }
+  #contact .container .row .filial {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact .container .row .filial .left {
+    padding-left: 0;
+  }
+  #contact .container .row .filial .right {
+    width: 100%;
+  }
   #basketTotal {
     margin-bottom: 40px;
   }
