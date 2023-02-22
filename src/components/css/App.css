@@ -4039,6 +4039,9 @@ aside::after {
   #info .info-row .info-item-2::before {
     background-size: 0;
   }
+  .mobil {
+    padding-top: 10px;
+  }
   .shooping {
     margin-bottom: 144px;
   }
