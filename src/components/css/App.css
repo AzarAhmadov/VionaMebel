@@ -3404,10 +3404,10 @@ aside::after {
   margin-left: 155px;
 }
 #basketTotal .basket-top ul li:nth-child(4) {
-  margin-left: 123px;
+  margin-left: 110px;
 }
 #basketTotal .basket-top ul li:nth-child(3) {
-  margin-left: 45px;
+  margin-left: 55px;
 }
 #basketTotal .basket-top ul li:nth-child(2) {
   margin-left: 90px;
@@ -3473,6 +3473,10 @@ aside::after {
   padding: 35px 0;
   width: 100%;
 }
+#basketTotal .basket-row .basket-item div .price {
+  width: 57px;
+  display: block;
+}
 #basketTotal .basket-row .basket-item .circle {
   width: 30px;
   height: 30px;
@@ -3503,35 +3507,40 @@ aside::after {
   font-size: 25px;
   color: #9F9F9F;
 }
-#basketTotal .basket-row .basket-item .btn {
-  display: flex;
-  background: #F5F5F5;
+#basketTotal .basket-row .basket-item .quantity {
+  border-radius: 10px;
+  justify-content: center;
   width: 180px;
-  height: 68px;
+  height: 66px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  background: #F5F5F5;
 }
-#basketTotal .basket-row .basket-item .btn button {
-  font-size: 20px;
-  flex-shrink: 0;
-  width: 20px;
+#basketTotal .basket-row .basket-item .quantity input {
+  width: 50px;
+  text-align: center;
+  background: transparent;
   border: none;
-  border-radius: 50%;
-  background: #D1D1D1;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#basketTotal .basket-row .basket-item .btn p {
-  padding: 0 25px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: #363636;
+}
+#basketTotal .basket-row .basket-item .quantity button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #D1D1D1;
+}
+#basketTotal .basket-row .basket-item .quantity button i {
+  color: #fff;
+  font-size: 15px;
 }
 #basketTotal .basket-row .basket-item .flex-basket {
   display: flex;
@@ -3686,7 +3695,10 @@ aside::after {
     justify-content: center;
   }
   #basketTotal .basket-row .basket-item div {
-    margin-right: 30px !important;
+    margin-right: 30px;
+  }
+  #basketTotal .basket-row .basket-item div div.quantity {
+    margin-right: 0;
   }
   #basket .row {
     flex-direction: column;

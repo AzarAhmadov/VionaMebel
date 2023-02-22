@@ -4,7 +4,6 @@ import BannerGlobal from '../BannerGlobal'
 import Container from '../home/Container'
 
 export default function Basket() {
-
     return (
         <main>
             <BannerGlobal />

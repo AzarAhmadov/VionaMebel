@@ -3973,11 +3973,11 @@ aside {
         }
 
         &:nth-child(4) {
-          margin-left: 123px;
+          margin-left: 110px;
         }
 
         &:nth-child(3) {
-          margin-left: 45px;
+          margin-left: 55px;
         }
 
         &:nth-child(2) {
@@ -4058,6 +4058,13 @@ aside {
       border-top: 1px solid #C6C6C6;
       padding: 35px 0;
       width: 100%;
+      div{
+        .price{
+          width: 57px;
+          display:block;
+          
+        }
+      }
 
 
       .circle {
@@ -4094,36 +4101,42 @@ aside {
         color: #9F9F9F;
       }
 
-      .btn {
-        display: flex;
-        background: #F5F5F5;
+      .quantity {
+        border-radius: 10px;
+        justify-content: center;
         width: 180px;
-        height: 68px;
+        height: 66px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        background: #F5F5F5;
 
-        button {
-          font-size: 20px;
-          flex-shrink: 0;
-          width: 20px;
+        input {
+          width: 50px;
+          text-align: center;
+          background: transparent;
           border: none;
-          border-radius: 50%;
-          background: #D1D1D1;
-          color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        p {
-          padding: 0 25px;
           font-family: 'Poppins';
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
           line-height: 27px;
           color: #363636;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: none;
+          background: #D1D1D1;
+
+          i {
+            color: #fff;
+            font-size: 15px;
+          }
         }
       }
 
@@ -4340,7 +4353,13 @@ aside {
     .basket-row {
       .basket-item {
         div {
-          margin-right: 30px !important;
+          margin-right: 30px;
+
+          div {
+            &.quantity {
+              margin-right: 0;
+            }
+          }
         }
       }
     }

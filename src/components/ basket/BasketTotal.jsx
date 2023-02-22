@@ -1,37 +1,59 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import BannerGlobal from '../BannerGlobal'
 import Container from '../home/Container'
 
 export default function BasketTotal() {
 
     window.scrollTo(0, 0)
-
     useEffect(() => {
-        let counter_value = document.querySelectorAll(".counter-value");
-        const dec_btn = document.querySelectorAll(".dec");
-        const inc_btn = document.querySelectorAll(".inc");
+        //setting default attribute to disabled of minus button
+        document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
 
-        dec_btn.forEach((el, item) => {
-            el.addEventListener('click', () => {
-                let counValue = Number(counter_value[item].textContent) + 1;
-                counter_value[item].textContent = counValue;
-            })
+        //taking value to increment decrement input value
+        var valueCount
+
+        //taking price value in variable
+        var price = document.getElementById("price").innerText;
+
+        //price calculation function
+        function priceTotal() {
+            var total = valueCount * price;
+            document.getElementById("price").innerText = total
+        }
+
+        //plus button
+        document.querySelector(".plus-btn").addEventListener("click", function () {
+
+            valueCount = document.getElementById("quantity").value;
+            valueCount++;
+            document.getElementById("quantity").value = valueCount;
+
+            if (valueCount > 1) {
+                document.querySelector(".minus-btn").removeAttribute("disabled");
+                document.querySelector(".minus-btn").classList.remove("disabled")
+            }
+            priceTotal()
         })
 
-        inc_btn.forEach((el, item) => {
-            el.addEventListener('click', () => {
-                let counValue = Number(counter_value[item].textContent) - 1;
-                counter_value[item].textContent = counValue;
-                let finsih = 0
-                if (counValue == -1) {
-                    counter_value[item].textContent = finsih
-                }
-            })
+        //plus button
+        document.querySelector(".minus-btn").addEventListener("click", function () {
+            //getting value of input
+            valueCount = document.getElementById("quantity").value;
+
+            //input value increment by 1
+            valueCount--;
+
+            //setting increment input value
+            document.getElementById("quantity").value = valueCount
+
+            if (valueCount == 1) {
+                document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+            }
+
+            //calling price function
+            priceTotal()
         })
-    }, [])
-
-
-
+    })
     return (
         <main>
             <BannerGlobal />
@@ -67,6 +89,47 @@ export default function BasketTotal() {
                         </ul>
                     </div>
                     <div className="basket-row">
+                        {/* <div className="basket-item">
+                            <div className='flex-basket'>
+                                <img src="../images/pop1.png" alt="" />
+                                <div className="name">
+                                    <span className="title">
+                                        Divan
+                                    </span>
+                                    <span className='code'>
+                                        v2ghjkl345
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <span className="olcu">
+                                    5x12x25
+                                </span>
+                            </div>
+                            <div>
+                                <span className='circle'></span>
+                            </div>
+                            <div>
+                                <span className="price">
+                                    2.190₼
+                                </span>
+                            </div>
+                            <div>
+                                <div className="quantity">
+                                    <button className="btn plus-btn" type="button"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" id="quantity" value="1" />
+                                    <button className="btn minus-btn disabled" type="button"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div>
+                                <span className="price priceValue">
+                                    2.190
+                                </span>
+                            </div>
+                            <div>
+                                <i className="fa-solid fa-trash"></i>
+                            </div>
+                        </div> */}
                         <div className="basket-item">
                             <div className='flex-basket'>
                                 <img src="../images/pop1.png" alt="" />
@@ -93,58 +156,14 @@ export default function BasketTotal() {
                                 </span>
                             </div>
                             <div>
-                                <div className="btn">
-                                    <button className='inc'>-</button>
-                                    <p className='counter-value'>1</p>
-                                    <button className='dec'>+</button>
+                                <div className="quantity">
+                                    <button className="btn minus-btn disabled" type="button"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" id="quantity" value="1" />
+                                    <button className="btn plus-btn" type="button"><i class="fa-solid fa-plus"></i></button>
                                 </div>
                             </div>
                             <div>
-                                <span className="price priceValue">
-                                    2.190
-                                </span>
-                            </div>
-                            <div>
-                                <i className="fa-solid fa-trash"></i>
-                            </div>
-                        </div>
-
-                        <div className="basket-item">
-                            <div className='flex-basket'>
-                                <img src="../images/pop4.png" alt="" />
-                                <div className="name">
-                                    <span className="title">
-                                        Divan
-                                    </span>
-                                    <span className='code'>
-                                        v2ghjkl345
-                                    </span>
-                                </div>
-                            </div>
-                            <div>
-                                <span className="olcu">
-                                    5x12x25
-                                </span>
-                            </div>
-                            <div>
-                                <span className='circle'></span>
-                            </div>
-                            <div>
-                                <span className="price">
-                                    2.190₼
-                                </span>
-                            </div>
-                            <div>
-                                <div className="btn">
-                                    <button className='inc'>-</button>
-                                    <p className='counter-value'>1</p>
-                                    <button className='dec'>+</button>
-                                </div>
-                            </div>
-                            <div>
-                                <span className="price priceValue">
-                                    2.190
-                                </span>
+                                <span className='price' id="price">2190</span>
                             </div>
                             <div>
                                 <i className="fa-solid fa-trash"></i>
