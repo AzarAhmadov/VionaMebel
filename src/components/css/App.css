@@ -4225,7 +4225,8 @@ aside::after {
     margin-left: 20px;
   }
   .mobil {
-    top: 90px;
+    top: 88px;
+    padding-top: 10px;
   }
   #register .row .left {
     width: 100%;
