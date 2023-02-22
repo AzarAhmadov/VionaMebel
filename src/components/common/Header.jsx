@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
-
+import { BsCart } from "react-icons/bs";
 export default function Header() {
     const mobil = useRef()
     const bar = useRef()
@@ -71,7 +71,8 @@ export default function Header() {
                         </div>
                         <div className="bar">
                             <Link to='/giris'> <i style={{ fontSize: '35px', color: "#00477F", width: "32px" }} className="fa-regular fa-circle-user"></i></Link>
-                            <i style={{ fontSize: "32px", color: "#00477F", margin: '0 20px', width: "32px" }} class="fa-solid fa-magnifying-glass"></i>
+                            <Link to="/sebet"><BsCart style={{color: "#00477F", margin: '0 15px', width: "40px", height:"35px" }}/></Link>
+                            <i style={{ fontSize: "32px", color: "#00477F", width: "48px" }} class="fa-solid fa-magnifying-glass"></i>
                             <i ref={bar} onClick={openMenu} style={{ fontSize: "32px", color: "#00477F", width: "32px" }} className="fa-solid fa-bars-staggered"></i>
                         </div>
                     </div>
@@ -100,7 +101,7 @@ export default function Header() {
                         </div>
                         <div className="links">
                             <Link className='bg-dark' to="/sebet">
-                                <i className="fa-solid fa-cart-shopping"></i>
+                                <BsCart className='icons' />
                                 <span>
                                     Səbət
                                 </span>

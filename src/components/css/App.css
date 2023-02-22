@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -101,17 +102,10 @@ body {
   padding-left: 10px;
 }
 .mobil ul li.link {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .mobil ul li.link:last-child {
   margin-bottom: 0;
-}
-.mobil ul li.link a {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
 }
 .mobil ul li a {
   width: -moz-max-content;
@@ -126,9 +120,9 @@ body {
   color: #000000;
 }
 .mobil ul li a svg {
-  margin-right: 20px;
-  width: 50px;
-  height: 70px;
+  margin-right: 15px;
+  width: 45px;
+  height: auto;
 }
 
 #header {
@@ -218,7 +212,13 @@ body {
   display: flex;
 }
 #header .averege .right .links {
+  display: flex;
   margin-right: 35px;
+}
+#header .averege .right .links .icons {
+  font-size: 31px;
+  margin-bottom: 7px;
+  color: #000;
 }
 #header .averege .right .links:last-child {
   margin-right: 0;
@@ -3503,6 +3503,13 @@ aside::after {
   line-height: 30px;
   color: #1A1B1C;
 }
+#basketTotal .basket-row .basket-item #price {
+  position: relative;
+}
+#basketTotal .basket-row .basket-item #price::after {
+  content: "₼";
+  padding-left: 5px;
+}
 #basketTotal .basket-row .basket-item i {
   font-size: 25px;
   color: #9F9F9F;
@@ -3613,7 +3620,8 @@ aside::after {
     width: 100%;
   }
   #header .left .bar {
-    display: block;
+    display: flex;
+    align-items: center;
   }
   #header .left .bar i {
     font-size: 30px;
@@ -4190,6 +4198,13 @@ aside::after {
   }
 }
 @media only screen and (max-width: 578px) {
+  .banner-global {
+    height: 250px;
+    margin-bottom: 40px;
+  }
+  .banner-global img {
+    height: 100%;
+  }
   #basket {
     margin-bottom: 50px;
   }
@@ -4337,7 +4352,7 @@ aside::after {
     width: 100%;
   }
   #header .logo img {
-    width: 170px;
+    width: 150px;
   }
   #header .top-row .right .sosial-icons ul li {
     margin-right: 15px;

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import BannerGlobal from '../BannerGlobal'
 import Container from '../home/Container'
 
@@ -89,47 +89,6 @@ export default function BasketTotal() {
                         </ul>
                     </div>
                     <div className="basket-row">
-                        {/* <div className="basket-item">
-                            <div className='flex-basket'>
-                                <img src="../images/pop1.png" alt="" />
-                                <div className="name">
-                                    <span className="title">
-                                        Divan
-                                    </span>
-                                    <span className='code'>
-                                        v2ghjkl345
-                                    </span>
-                                </div>
-                            </div>
-                            <div>
-                                <span className="olcu">
-                                    5x12x25
-                                </span>
-                            </div>
-                            <div>
-                                <span className='circle'></span>
-                            </div>
-                            <div>
-                                <span className="price">
-                                    2.190₼
-                                </span>
-                            </div>
-                            <div>
-                                <div className="quantity">
-                                    <button className="btn plus-btn" type="button"><i class="fa-solid fa-minus"></i></button>
-                                    <input type="text" id="quantity" value="1" />
-                                    <button className="btn minus-btn disabled" type="button"><i class="fa-solid fa-plus"></i></button>
-                                </div>
-                            </div>
-                            <div>
-                                <span className="price priceValue">
-                                    2.190
-                                </span>
-                            </div>
-                            <div>
-                                <i className="fa-solid fa-trash"></i>
-                            </div>
-                        </div> */}
                         <div className="basket-item">
                             <div className='flex-basket'>
                                 <img src="../images/pop1.png" alt="" />
@@ -179,7 +138,7 @@ export default function BasketTotal() {
                             <li className='b-item'>Endirim:</li>
                             <li className='b-item'>0 ₼</li>
                             <li><span>Cəmi qiymət:</span></li>
-                            <li style={{ paddingBottom: '0' }}><span>3.757 ₼</span></li>
+                            <li style={{ paddingBottom: '0' }}><span>2190 ₼</span></li>
                         </ul>
                     </div>
                     <div className="btn-bottom">

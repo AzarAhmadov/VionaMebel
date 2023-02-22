@@ -8,6 +8,7 @@ import Slider from './Slider'
 import WhyUs from './WhyUs'
 
 export default function Home() {
+    {window.scrollTo(0, 0)}
     return (
         <>
             <main>

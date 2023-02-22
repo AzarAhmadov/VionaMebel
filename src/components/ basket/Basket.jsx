@@ -138,24 +138,6 @@ export default function Basket() {
                                         </span>
                                     </div>
                                 </div>
-                                <div className='basket-flex'>
-                                    <div className='name'>
-                                        <img src="../images/pop4.png" alt="" />
-                                        <div className="dec">
-                                            <span className='title'>
-                                                Divan
-                                            </span>
-                                            <span className='code'>
-                                                v2ghjkl345
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span className='price'>
-                                            1.560₼
-                                        </span>
-                                    </div>
-                                </div>
                             </div>
                             <div className="basket-bottom">
                                 <ul>
@@ -163,7 +145,7 @@ export default function Basket() {
                                         Məhsul:
                                     </li>
                                     <li>
-                                        3.750 ₼
+                                        2190 ₼
                                     </li>
 
                                     <li>
@@ -186,7 +168,7 @@ export default function Basket() {
                                     </li>
                                     <li>
                                         <span className="price">
-                                            3.757 ₼
+                                            2190 ₼
                                         </span>
                                     </li>
                                 </ul>
