@@ -11,6 +11,7 @@ import Login from '../login/Login';
 import Register from '../login/Register';
 import ScroolTop from '../common/ScroolTop';
 import ShoppingCentre from '../shopping/ShoppingCentre';
+import BasketTotal from '../ basket/BasketTotal';
 export default function Pages() {
     return (
         <>
@@ -27,6 +28,7 @@ export default function Pages() {
                     <Route path='/giris' element={<Login />} />
                     <Route path='/qeydiyyat' element={<Register />} />
                     <Route path='/sebet' element={<Basket />} />
+                    <Route path='/sebet-total' element={<BasketTotal />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
