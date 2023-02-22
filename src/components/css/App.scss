@@ -4401,6 +4401,16 @@ aside {
   }
 }
 
+.bottomTotal{
+  position: relative;
+  padding-right: 20px;
+  &::before{
+    position: absolute;
+    right: 0px;
+    content:"₼";
+  }
+}
+
 // Responsive
 
 @media only screen and (max-width:1200px) {

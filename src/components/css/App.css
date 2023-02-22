@@ -3765,6 +3765,16 @@ aside::after {
   width: 615px;
 }
 
+.bottomTotal {
+  position: relative;
+  padding-right: 20px;
+}
+.bottomTotal::before {
+  position: absolute;
+  right: 0px;
+  content: "₼";
+}
+
 @media only screen and (max-width: 1200px) {
   #basketTotal .basket-top {
     display: none;

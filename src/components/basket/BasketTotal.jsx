@@ -6,22 +6,15 @@ export default function BasketTotal() {
 
     window.scrollTo(0, 0)
     useEffect(() => {
-        //setting default attribute to disabled of minus button
         document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
-
-        //taking value to increment decrement input value
         var valueCount
-
-        //taking price value in variable
         var price = document.getElementById("price").innerText;
-
-        //price calculation function
         function priceTotal() {
             var total = valueCount * price;
             document.getElementById("price").innerText = total
+            const bottomTotal = document.querySelector('.bottomTotal').innerHTML = total
         }
 
-        //plus button
         document.querySelector(".plus-btn").addEventListener("click", function () {
 
             valueCount = document.getElementById("quantity").value;
@@ -35,22 +28,14 @@ export default function BasketTotal() {
             priceTotal()
         })
 
-        //plus button
         document.querySelector(".minus-btn").addEventListener("click", function () {
-            //getting value of input
             valueCount = document.getElementById("quantity").value;
-
-            //input value increment by 1
             valueCount--;
-
-            //setting increment input value
             document.getElementById("quantity").value = valueCount
 
             if (valueCount == 1) {
                 document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
             }
-
-            //calling price function
             priceTotal()
         })
     })
@@ -138,7 +123,7 @@ export default function BasketTotal() {
                             <li className='b-item'>Endirim:</li>
                             <li className='b-item'>0 ₼</li>
                             <li><span>Cəmi qiymət:</span></li>
-                            <li style={{ paddingBottom: '0' }}><span>2190 ₼</span></li>
+                            <li style={{ paddingBottom: '0' }}><span className='bottomTotal'>2190</span></li>
                         </ul>
                     </div>
                     <div className="btn-bottom">
