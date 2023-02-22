@@ -4,6 +4,7 @@ import BannerGlobal from '../BannerGlobal'
 import Container from '../home/Container'
 
 export default function Basket() {
+    window.scrollTo(0, 0)
     return (
         <main>
             <BannerGlobal />
