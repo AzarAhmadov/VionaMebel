@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { allProduct } from '../data/data';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

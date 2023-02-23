@@ -9,6 +9,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 import SimilarProduct from './SimilarProduct';
 import TogetherProduct from './TogetherProduct';
 import Client from './Client';
+
 export default function Detail() {
 
     window.scrollTo(0, 0);
@@ -78,7 +79,6 @@ export default function Detail() {
                                     <SwiperSlide>
                                         <img src="../images/detail.png" />
                                     </SwiperSlide>
-
                                 </Swiper>
                                 <Swiper
                                     onSwiper={setThumbsSwiper}
@@ -116,7 +116,6 @@ export default function Detail() {
                                         <img className='slide-bottom' src="../images/detail.png" />
                                     </SwiperSlide>
                                 </Swiper>
-
                             </div>
                         </div>
                         <div className="right">
