@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import BannerGlobal from '../BannerGlobal'
 import Container from '../home/Container'
 import { Link } from 'react-router-dom';
@@ -7,21 +7,21 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import { Navigation, Mousewheel, Keyboard } from "swiper";
 export default function Login() {
-    {window.scrollTo(0, 0)}
-    var countDate = new Date("Feb 30, 2023 00:00:00").getTime();
+    window.scrollTo(0, 0) 
+    var countDate2 = new Date("Feb 30, 2023 00:00:00").getTime();
 
-    function newYear() {
-        var now = new Date().getTime();
-        var gap = countDate - now;
-        var second = 1000;
-        var minute = second * 60;
-        var hour = minute * 60;
-        var day = hour * 24;
+    function newYear2() {
+        var now1 = new Date().getTime();
+        var gap1 = countDate2 - now1;
+        var second1 = 1000;
+        var minute1 = second1 * 60;
+        var hour1 = minute1 * 60;
+        var day1 = hour1 * 24;
 
-        var d = Math.floor(gap / day);
-        var h = Math.floor((gap % day) / hour);
-        var m = Math.floor((gap % hour) / minute);
-        var s = Math.floor((gap % minute) / second);
+        var d = Math.floor(gap1 / day1);
+        var h = Math.floor((gap1 % day1) / hour1);
+        var m = Math.floor((gap1% hour1) / minute1);
+        var s = Math.floor((gap1 % minute1) / second1);
 
         const days = document.querySelectorAll('.days')
         const hours = document.querySelectorAll('.hours')
@@ -36,9 +36,12 @@ export default function Login() {
         }
     }
 
-    setInterval(function () {
-        newYear();
-    }, 1000);
+    useEffect(() => {
+        setInterval(function () {
+            newYear2();
+        }, 1000);
+    }, [])
+
     return (
         <main>
             <section className='global-slide' id='login'>
