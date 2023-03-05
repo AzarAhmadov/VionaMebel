@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { Navigation, Mousewheel, Keyboard } from "swiper";
 export default function Login() {
     window.scrollTo(0, 0) 
-    var countDate = new Date("Mar 3, 2023 00:00:00").getTime();
+    var countDate = new Date("Mar 28, 2023 00:00:00").getTime();
 
     function newYear2() {
         var now = new Date().getTime();
